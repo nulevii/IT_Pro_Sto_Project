@@ -2,14 +2,14 @@
   "name": "parcel-project-template",
   "version": "2.0.0",
   "description": "",
-  "homepage": "https://nulevii.github.io/IT_Pro_Sto_Project",
+  "homepage": "https://nulevii.github.io/IT_Pro_Sto_Project/",
   "scripts": {
     "start": "parcel src/*.html",
     "build": "parcel build src/*.html --public-url /parcel-project-template/"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/nulevii/IT_Pro_Sto_Project"
+    "url": "git+https://github.com/nulevii/IT_Pro_Sto_Project/"
   },
   "keywords": [],
   "author": "Alexander Repeta <alexander.repeta@gmail.com>",
