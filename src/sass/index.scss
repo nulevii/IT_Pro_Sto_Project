@@ -6,7 +6,24 @@
 @import './base/common';
 @import './base/container';
 
-//layouts
-@import './layouts/header-hero';
-
 //components
+@import './components/header-hero';
+
+@import './components/products';
+
+@import './components/about';
+
+@import './components/advantages';
+
+@import './components/gallery';
+
+@import './components/customer-reviews';
+
+@import './components/contacts';
+
+@import './components/footer';
+
+//layouts
+@import './layouts/page-header';
+@import './layouts/page-main';
+@import './layouts/page-footer';

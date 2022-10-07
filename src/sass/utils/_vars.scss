@@ -1,0 +1,22 @@
+:root {
+  // colors
+  --color-white-main: #fcfcfc;
+  --color-yellow-main: #f8d24e;
+  --color-yellow-secondary: #efd478;
+  --color-green-main: #84a178;
+  --color-green-secondary: #aec6a5;
+  --color-brown-main: #d6936d;
+  --color-grey-main: #ababab;
+  --color-grey-secondary: #7a7a7a;
+  --color-black-main: #131313;
+
+  // fonts
+  --default-font:  font-family: 'Montserrat', sans-serif;
+  --secondary-font: font-family: 'Seymour One', sans-serif;
+
+}
+
+%animation-style {
+  --default-animation: cubic-bezier(0.4, 0, 0.2, 1);
+  --default-animation-duration: 250ms;
+}
