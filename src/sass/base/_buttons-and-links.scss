@@ -1,27 +1,38 @@
 %button-style-main {
+  background-color: var(--color-yellow-main);
+  &:hover {
+    background-color: var(--color-green-button);
+  }
+
+  &:focus {
+    color: var(--color-white-main);
+    background-color: var(--color-green-button);
+  }
+
+  &:disabled {
+    background-color: var(--color-grey-main);
+  }
+}
+%button-style-secondary {
   border: 2px solid var(--color-yellow-main);
   background-color: transparent;
   color: var(--color-black-main);
 
   &:hover {
-    border-color: #0a8817;
+    border-color: var(--color-green-button);
   }
 
   &:focus {
     color: var(--color-white-main);
-    border-color: #0a8817;
+    border-color: var(--color-green-button);
   }
 
   &:disabled {
+    border-color: var(--color-grey-main);
   }
 }
-%button-style-secondary {
-}
 .button {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
+  padding: 12px 34px;
   font-family: var(--default-font);
   font-style: normal;
   font-weight: 600;
@@ -30,15 +41,88 @@
 
   color: var(--color-black-main);
 
-  border-radius: 8px;
+  border-radius: 10px;
 
   outline: none;
-
+  border: none;
   &.products__button {
-    @extend %button-style-main;
+    padding: 0;
+    @extend %button-style-secondary;
     width: 62px;
     height: 24px;
-
     font-size: 8px;
+
+    border-radius: 8px;
+    @media screen and (min-width: 1200px) {
+      width: auto;
+      height: auto;
+      padding: 12px 34px;
+      font-weight: 600;
+      font-size: 14px;
+      line-height: calc(18 / 14);
+
+      border-radius: 10px;
+    }
   }
+
+  &.read-more__button {
+    @extend %button-style-main;
+  }
+
+  &.location__button {
+    width: 196px;
+    @extend %button-style-main;
+
+    .arrow-one {
+      margin-left: 10px;
+    }
+  }
+
+  &.franchise__button {
+    width: 196px;
+
+    @extend %button-style-secondary;
+
+    .arrow-one {
+      margin-left: 10px;
+    }
+  }
+
+  &.buy__button {
+    @extend %button-style-main;
+  }
+}
+
+.link {
+  &.about-info-link {
+    font-weight: 600;
+    font-size: 8px;
+    line-height: calc(9.75 / 8);
+    color: var(--color-yellow-main);
+
+    @media screen and (min-width: 1200px) {
+      font-size: 14px;
+      line-height: calc(17 / 14);
+    }
+
+    &:hover {
+      color: var(--color-green-button);
+    }
+
+    &:focus {
+      color: var(--color-white-button);
+    }
+
+    &:disabled {
+      color: var(--color-grey-main);
+    }
+  }
+}
+
+.arrow-one {
+  stroke: currentColor;
+  fill: none;
+  position: relative;
+  top: 1px;
+  margin-left: 2px;
 }
