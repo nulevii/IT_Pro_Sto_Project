@@ -1,31 +1,46 @@
 <section class="header-hero section">
   <div class="container">
 
-    <nav>
-      <img src="./images/header-hero/Logo.png" alt="logo">
-      <ul>
-        <li><a href="">Home</a> </li>
-        <li><a href="">How it’s made?</a></li>
-        <li><a href="">Our products</a></li>
-        <li><a href="">Contact</a></li>
+    <nav class="nav">
+      <img class="logo nav__logo" src="./images/header-hero/Logo.png" alt="logo">
+      <ul class="list nav__list">
+        <li class="nav__item">
+          <a class="nav__item-link" href="">Home</a>
+        </li>
+        <li class="nav__item">
+          <a class="nav__item-link" href="">How it’s made?</a>
+        </li>
+        <li class="nav__item">
+          <a class="nav__item-link" href="">Our products</a>
+        </li>
+        <li class="nav__item">
+          <a class="nav__item-link" href="">Contact</a>
+        </li>
       </ul>
     </nav>
-    <button aria-label="Buy now button">Buy now</button>
-    <h1>ice cream made with passion</h1>
-    <ul>
-      <li>16<span>cafes</span></li>
-      <li>23<span>food trucks</span></li>
-    </ul>
 
-    <ul>
-      <li><button aria-label="Products page button">Products</button></li>
-      <li><button aria-label="How it’s made page button">How it’s made?</button></li>
-    </ul>
+    <div class="hero">
+      <button class="button button-action" aria-label="Buy now button">Buy now</button>
+      <h1 class="hero__title">ice cream made with passion</h1>
+      <ul class="list hero-franchise">
+        <li class="hero-franchise__item"><span class="hero-franchise__item--bold">16</span>cafes</li>
+        <li class="hero-franchise__item"><span class="hero-franchise__item--bold">23</span>food trucks</li>
+      </ul>
 
-    <img src="./images/header-hero/plate_ice-cream.png" alt="a plate with ice cream">
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et</p>
+      <ul class="list btn__list">
+        <li class="btn__item"><button class="button btn__buttons" aria-label="Products page button">Products</button>
+        </li>
+        <li class="btn__item"><button class="button btn__buttons" aria-label="How it’s made page button">How it’s
+            made?</button></li>
+      </ul>
+      <div class="hero-desc">
+        <img class="hero-desc__image" src="./images/header-hero/plate_ice-cream.png" alt="a plate with ice cream">
+        <p class="hero-desc__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+          incididunt ut labore et</p>
+      </div>
+      <img class="hero__main-image" src="./images/header-hero/ice_cream.png" alt="Big ice cream">
+    </div>
 
-    <img src="./images/header-hero/ice_cream.png" alt="Big ice cream">
   </div>
 
 </section>
