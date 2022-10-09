@@ -2,48 +2,62 @@
   <div class="container">
 
     <nav class="nav">
-      <img class="logo nav__logo" src="./images/header-hero/Logo.png" alt="logo">
+      <img class="logo nav__logo" src="./images/header-hero/logo.png" alt="logo">
       <ul class="list nav__list">
         <li class="nav__item">
-          <a class="nav__item-link" href="">Home</a>
+          <a class="nav__item-link link" href="">Home</a>
         </li>
         <li class="nav__item">
-          <a class="nav__item-link" href="">How it’s made?</a>
+          <a class="nav__item-link link" href="">How it’s made?</a>
         </li>
         <li class="nav__item">
-          <a class="nav__item-link" href="">Our products</a>
+          <a class="nav__item-link link" href="">Our products</a>
         </li>
         <li class="nav__item">
-          <a class="nav__item-link" href="">Contact</a>
+          <a class="nav__item-link link" href="">Contact</a>
         </li>
       </ul>
+      <svg class="burger-icon" width="32" height="32">
+        <use href="./images/icons.svg#icon-burger"></use>
+      </svg>
+
+
+
+      <button class="button buy__button" type="button">Buy Now
+        <svg height="12" width="12">
+          <use class="arrow-one" href="./images/icons.svg#arrow-one" />
+        </svg>
+      </button>
     </nav>
 
     <div class="hero">
-      <button class="button buy__button" type="button">Buy Now
-        <svg class="arrow-one" height="12" width="12">
-          <use href="./images/icons.svg#arrow-one" />
-        </svg>
-      </button>
-      <h1 class="hero__title">ice cream made with passion</h1>
-      <ul class="list hero-franchise">
-        <li class="hero-franchise__item"><span class="hero-franchise__item--bold">16</span>cafes</li>
-        <li class="hero-franchise__item"><span class="hero-franchise__item--bold">23</span>food trucks</li>
-      </ul>
+
+      <div class="hero__container">
+        <h1 class="hero__title">ice cream made with <span class="hero__title--big">passion</span></h1>
+        <ul class="list hero-franchise">
+          <li class="hero-franchise__item"><span class="hero-franchise__item--bold">16</span>
+            <p>cafes</p>
+          </li>
+          <li class="hero-franchise__item"><span class="hero-franchise__item--bold">23</span>
+            <p>food trucks</p>
+          </li>
+        </ul>
+      </div>
 
       <ul class="list btn__list">
         <li class="btn__item"><button class="button products__button" type="button">Products</button>
         </li>
-        <!-- <li class="btn__item"><button class="button btn__buttons" aria-label="How it’s made page button">How it’s
-            made?</button></li> -->
-        <a class="about-info-link link" href="./index.html">How it’s made?</a>
-      </ul>
-      <div class="hero-desc">
-        <img class="hero-desc__image" src="./images/header-hero/plate_ice-cream.png" alt="a plate with ice cream">
-        <p class="hero-desc__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-          incididunt ut labore et</p>
-      </div>
-      <img class="hero__main-image" src="./images/header-hero/ice_cream.png" alt="Big ice cream">
+        <li class="btn__item">
+          <button class="about-info-btn noborder-btn" aria-label="How it’s made page button">How it’s made?</button>
+        </li>
+        <!-- <li class="btn__item"><a class="about-info-link link" href="./index.html">How it’s made?</a></li>
+      </ul> -->
+        <div class="hero-desc">
+          <img class="hero-desc__image" src="./images/header-hero/plate_ice-cream.png" alt="a plate with ice cream">
+          <p class="hero-desc__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+            incididunt ut labore et</p>
+        </div>
+        <img class="hero__main-image" src="./images/header-hero/ice_cream.png" alt="Big ice cream">
     </div>
 
   </div>
