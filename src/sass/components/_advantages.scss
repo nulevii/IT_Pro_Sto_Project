@@ -1,3 +1,40 @@
 .advantages {
+
   background-color: #fff;
+}
+
+.advantages__list {
+}
+
+.advantages__item {
+  
+}
+
+.advantages__box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  padding: 0 45px;
+}
+
+.advantages__title {
+  font-style: 'Roboto', sans-serif;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.7;
+  letter-spacing: var(--lt-sp-main);
+  text-align: center;
+
+  text-transform: uppercase;
+}
+
+.advantages__desc {
+
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 1.7;
+  text-align: center;
+
 }
