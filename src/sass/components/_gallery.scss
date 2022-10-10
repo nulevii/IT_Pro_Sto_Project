@@ -1,5 +1,33 @@
 .gallery {
+  background-color: transparent;
+  padding-bottom: 75px;
+
+  @media screen and (min-width: 768px) {
+    padding-bottom: 60px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    padding-bottom: 123px;
+  }
 }
 
 .gallery__image {
+  min-width: 279px;
+
+  margin: auto;
+  border-radius: 7.4px;
+
+  @media screen and (min-width: 768px) {
+    width: 704px;
+    height: 327px;
+
+    border-radius: 18px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 1013px;
+    height: 422px;
+
+    border-radius: 24px;
+  }
 }

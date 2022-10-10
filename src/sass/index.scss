@@ -4,6 +4,7 @@
 //base
 @import './base/reset';
 @import './base/common';
+@import './base/section';
 @import './base/container';
 @import './base/buttons-and-links';
 
@@ -18,6 +19,7 @@
 
 @import './components/advantages';
 
+@import './components/gallery-customers-background';
 @import './components/gallery';
 
 @import './components/customer-reviews';
@@ -30,3 +32,5 @@
 @import './layouts/page-header';
 @import './layouts/page-main';
 @import './layouts/page-footer';
+
+@import './layouts/our-location';
