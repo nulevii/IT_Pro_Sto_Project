@@ -1,10 +1,6 @@
 .gallery {
   background-color: transparent;
-  padding-bottom: 75px;
-
-  @media screen and (min-width: 768px) {
-    padding-bottom: 60px;
-  }
+  padding-bottom: 55px;
 
   @media screen and (min-width: 1200px) {
     padding-bottom: 123px;
@@ -13,7 +9,8 @@
 
 .gallery__image {
   min-width: 279px;
-
+  width: 279px;
+  height: 130px;
   margin: auto;
   border-radius: 7.4px;
 

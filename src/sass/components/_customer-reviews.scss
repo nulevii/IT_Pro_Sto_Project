@@ -83,4 +83,8 @@
   height: 12px;
   border-radius: 50%;
   background-color: var(--color-gray-radio);
+
+  &:hover {
+    cursor: pointer;
+  }
 }
