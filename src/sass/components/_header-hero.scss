@@ -1,2 +1,32 @@
 .header-hero {
+  min-height: 502px;
+  max-height: 100vh;
 }
+
+.hero {
+  position: relative;
+  height: 100vh;
+}
+
+.hero__main-image {
+  position: absolute;
+  // bottom: 0;
+  // top: 0;
+  // left: 0;
+  // transform: translateY(50%);
+
+  // bottom: 0;
+  // right: 77px;
+
+  // width: 49%;
+  // max-width: 157px;
+}
+
+// .hero__bg-image {
+//   position: absolute;
+//   bottom: 0;
+//   left: 0;
+//   transform: translateY(-50%);
+
+//   width: 100%;
+// }
