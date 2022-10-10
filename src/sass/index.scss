@@ -1,6 +1,7 @@
 // utils
 @import './utils/vars';
-
+@import './utils/slick';
+@import './utils/slick-theme';
 //base
 @import './base/reset';
 @import './base/common';
@@ -10,6 +11,8 @@
 
 //components
 @import './components/header-hero';
+@import './components/header';
+@import './components/hero';
 
 @import './components/products';
 
@@ -33,3 +36,4 @@
 
 @import './layouts/our-location';
 @import './layouts/franchise';
+

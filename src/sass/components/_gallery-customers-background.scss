@@ -1,8 +1,17 @@
 .gallery-customers-background {
   background-image: url('../images/customer-reviews/customers-background-1200.jpg');
   background-color: var(--color-green-main);
-  background-repeat: no-repeat;
+  background-repeat: repeat-x;
 
   background-position: top 25px center;
   background-size: auto 1045px;
+
+  @media screen and (min-width: 768px) {
+    background-position: top 164px center;
+    background-size: auto 959px;
+  }
+  @media screen and (min-width: 1200px) {
+    background-position: top 94px center;
+    background-size: auto 1013px;
+  }
 }
