@@ -1,0 +1,123 @@
+.hero {
+  &__container {
+    display: flex;
+    justify-content: space-between;
+
+    .hero-franchise {
+      display: none;
+
+      @media screen and (min-width: 768px) {
+        display: block;
+        text-align: right;
+      }
+
+      &__item {
+        font-weight: 400;
+        font-size: 8px;
+        line-height: 1.25;
+
+        @media screen and (min-width: 1200px) {
+          font-size: 14px;
+          line-height: 1.21;
+        }
+      }
+
+      &__item--bold {
+        font-weight: 900;
+        font-size: 28px;
+        line-height: 1.21;
+        letter-spacing: 0.04em;
+        text-transform: uppercase;
+        color: var(--color-black-main);
+
+        @media screen and (min-width: 1200px) {
+          font-size: 46px;
+          line-height: 56px;
+        }
+      }
+    }
+  }
+
+  &__title {
+    font-family: var(--secondary-font);
+    font-weight: 400;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    font-size: 26px;
+    line-height: 1.27;
+    width: 247px;
+    margin-bottom: 32px;
+    color: var(--color-white-main);
+
+    @media screen and (min-width: 768px) {
+      font-size: 18px;
+      line-height: 1.28;
+      width: 181px;
+      letter-spacing: 0;
+      margin-bottom: 21px;
+    }
+
+    @media screen and (min-width: 1200px) {
+      width: 367px;
+      font-size: 38px;
+      line-height: 1.26;
+      letter-spacing: 0.04em;
+      margin-bottom: 28px;
+    }
+
+    &--big {
+      font-size: 34px;
+      line-height: 0.97;
+
+      @media screen and (min-width: 768px) {
+        font-size: 24px;
+        line-height: 1.28;
+      }
+
+      @media screen and (min-width: 1200px) {
+        font-size: 38px;
+        line-height: 1.26;
+      }
+    }
+  }
+}
+
+.hero-desc {
+  display: none;
+  @media screen and (min-width: 768px) {
+    display: block;
+  }
+}
+
+.btn-list {
+  display: flex;
+  gap: 8px;
+
+  @media screen and (min-width: 1200px) {
+    gap: 12px;
+  }
+}
+
+.products__button.about-info-btn {
+  color: var(--color-yellow-main);
+  border: none;
+  width: auto;
+  padding-right: 10px;
+  padding-left: 10px;
+  text-decoration-line: underline;
+  &:hover {
+    color: var(--color-green-button);
+  }
+
+  &:focus {
+    color: var(--color-white-button);
+  }
+
+  &:disabled {
+    color: var(--color-grey-main);
+  }
+  @media screen and (min-width: 1200px) {
+    padding-right: 22px;
+    padding-left: 22px;
+  }
+}
