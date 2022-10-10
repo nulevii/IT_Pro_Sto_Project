@@ -66,7 +66,7 @@
   <include src="./partials/modal-windows/read-more.html"></include>
 
   <!-- <include src="./partials/modal-windows/our-location.html"></include> -->
-  <include src="./partials/modal-windows/franchise.html"></include>
+  <!-- <include src="./partials/modal-windows/franchise.html"></include> -->
 
   <!-- <script src="./scripts/flickity.pkgd.min.js"></script> -->
 
@@ -75,6 +75,22 @@
   <script type="text/javascript" src="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.0/slick/slick.min.js"></script>
 
   <script type="text/javascript" src="./scripts/slider.js"></script>
+
+  <picture>
+    <source srcset="
+                                  ./images/gallery/gallery-1-1013.jpg    1x,
+                                  ./images/gallery/gallery-1-2026.jpg 2x
+                                " media="(min-width: 1200px)" />
+    <source srcset="
+                                  ./images/gallery/gallery-1-704.jpg    1x,
+                                  ./images/gallery/gallery-1-1408.jpg 2x
+                                " media="(min-width: 768px)" />
+    <source srcset="
+                                  ./images/gallery/gallery-1-279.jpg    1x,
+                                  ./images/gallery/gallery-1-558.jpg 2x
+                                " media="(max-width: 767px)" />
+    <img src="./images/gallery/gallery-1-279.jpg" alt="Icecream footage" width="270" class="our-team-list__image" />
+  </picture>
 </body>
 
 </html>
