@@ -50,8 +50,11 @@
   }
 }
 
-.burger-icon {
+.mobile-menu__button {
   display: block;
+  fill: var(--color-white-main);
+  background-color: transparent;
+  border: none;
 
   @media screen and (min-width: 768px) {
     margin-right: 32px;
@@ -68,5 +71,12 @@
 
   @media screen and (min-width: 768px) {
     display: block;
+  }
+
+  &--mobile {
+    display: block;
+    @media screen and (min-width: 768px) {
+      display: none;
+    }
   }
 }
