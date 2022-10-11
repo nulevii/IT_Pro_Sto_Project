@@ -1,6 +1,7 @@
 // utils
 @import './utils/vars';
-
+@import './utils/slick';
+@import './utils/slick-theme';
 //base
 @import './base/reset';
 @import './base/common';
@@ -35,3 +36,5 @@
 @import './layouts/page-footer';
 
 @import './layouts/our-location';
+@import './layouts/franchise';
+@import './layouts/read-more';
