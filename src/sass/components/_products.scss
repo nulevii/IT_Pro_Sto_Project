@@ -1,6 +1,12 @@
 .products {
-  background-image: url('../images/products/products-background-1200.jpg');
-  .container {
+  background-image: url('../images/background/icecream6.jpg');
+  background-size: auto 1045px;
+
+  @media screen and (min-width: 768px) {
+    background-size: auto 959px;
+  }
+  @media screen and (min-width: 1200px) {
+    background-size: auto 1013px;
   }
 }
 
@@ -8,11 +14,11 @@
   padding: 60px 0;
 
   @media screen and (min-width: 768px) {
-      padding-bottom: 82px;
-    }
-    @media screen and (min-width: 1200px) {
-      padding-bottom: 66px;
-    }
+    padding-bottom: 82px;
+  }
+  @media screen and (min-width: 1200px) {
+    padding-bottom: 66px;
+  }
 }
 
 .uppertitle {
@@ -29,12 +35,12 @@
 
   @media screen and (min-width: 768px) {
     font-weight: 800;
-      font-size: 22px;
-    }
+    font-size: 22px;
+  }
 
   @media screen and (min-width: 1200px) {
-      font-size: 30px;
-    }
+    font-size: 30px;
+  }
 }
 
 .title {
@@ -50,42 +56,41 @@
   color: var(--color-black-main);
 
   @media screen and (min-width: 768px) {
-      font-size: 34px;
-      line-height: 1.26;
-      
-      letter-spacing: 0.06em;
-    }
-  
+    font-size: 34px;
+    line-height: 1.26;
+
+    letter-spacing: 0.06em;
+  }
+
   @media screen and (min-width: 1200px) {
-      font-size: 36px;
-      line-height: 45px;
-    }
+    font-size: 36px;
+    line-height: 45px;
+  }
 }
 
 .products__title {
   margin-bottom: 148px;
 
   @media screen and (min-width: 768px) {
-      margin-bottom: 200px;
-    }
-  
-    @media screen and (min-width: 1200px) {
-      margin-bottom: 300px;
-    }
+    margin-bottom: 200px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 300px;
+  }
 }
 
 .products__list {
-  
   @media screen and (min-width: 768px) {
-      display: flex;
-      flex-direction: row;
-      justify-content: space-between;
-      gap: 16px;
-    }
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 16px;
+  }
 
-    @media screen and (min-width: 1200px) {
-      gap: 32px;
-    }
+  @media screen and (min-width: 1200px) {
+    gap: 32px;
+  }
 }
 
 .products__item {
@@ -95,12 +100,10 @@
   align-items: center;
 
   &:not(:last-child) {
-  
-      @media screen and (max-width: 767px) {
-        margin-bottom: 164px;
-      }
-  
+    @media screen and (max-width: 767px) {
+      margin-bottom: 164px;
     }
+  }
 }
 
 .products__card {
@@ -121,17 +124,16 @@
 
     width: 224px;
     height: 428px;
-    
-    border-radius: 16px; 
-    }
-  
-    @media screen and (min-width: 1200px) {
-      padding: 166px 63px 60px;
 
-      width: 370px;
-      height: 535px;
-    }
+    border-radius: 16px;
+  }
 
+  @media screen and (min-width: 1200px) {
+    padding: 166px 63px 60px;
+
+    width: 370px;
+    height: 535px;
+  }
 
   &--ice-cream {
     background-color: var(--color-green-secondary);
@@ -156,12 +158,11 @@
   margin-top: 40px;
 
   @media screen and (min-width: 1200px) {
-      margin-top: 65px;
-    }
+    margin-top: 65px;
+  }
 }
 
 .products__card-title {
-
   font-weight: 700;
   font-size: 20px;
   line-height: 1.2;
@@ -173,12 +174,12 @@
   color: var(--color-black-main);
 
   @media screen and (min-width: 768px) {
-      font-size: 22px;
-    }
-  
-    @media screen and (min-width: 1200px) {
-      font-size: 30px;
-    }
+    font-size: 22px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    font-size: 30px;
+  }
 }
 
 .products__card-text {
@@ -192,13 +193,11 @@
   color: var(--color-black-main);
 
   @media screen and (min-width: 1200px) {
-      font-size: 16px;
-    }
-
+    font-size: 16px;
+  }
 }
 
 .products__card-button {
-  
   padding: 0;
   height: 15px;
 
@@ -209,7 +208,6 @@
 
 .products__card-button:hover,
 .products__card-button:focus {
-  
   cursor: pointer;
 }
 
@@ -228,12 +226,12 @@
   border-radius: 50%;
 
   z-index: 1;
-  
+
   @media screen and (min-width: 1200px) {
-      top: -28%;
-      width: 300px;
-      height: 300px;
-    }
+    top: -28%;
+    width: 300px;
+    height: 300px;
+  }
 
   &--ice-cream {
     background: linear-gradient(
