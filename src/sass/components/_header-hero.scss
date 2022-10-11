@@ -1,19 +1,32 @@
 .header-hero {
   min-height: 502px;
-  max-height: 100vh;
-}
-
-.hero {
-  position: relative;
+  // max-height: 100vh;
   height: 100vh;
 }
 
-.hero__main-image {
+.container__imgs {
+  height: 100vh;
+  position: relative;
+}
+
+// .hero {
+
+// }
+
+.hero__main-img {
   position: absolute;
-  // bottom: 0;
-  // top: 0;
-  // left: 0;
-  // transform: translateY(50%);
+  bottom: -53px;
+  right: 8%;
+
+  @media screen and (min-width: 1200px) {
+    bottom: -99px;
+  }
+
+  // margin: 0 auto;
+  // transform: translateX(50%);
+  // display: inline-flex;
+  // align-self: center;
+  // transform: translate(50%, 50%);
 
   // bottom: 0;
   // right: 77px;
@@ -21,6 +34,11 @@
   // width: 49%;
   // max-width: 157px;
 }
+
+// .hero__img {
+//   text-align: center;
+//   margin: 0 auto;
+// }
 
 // .hero__bg-image {
 //   position: absolute;

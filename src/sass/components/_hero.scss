@@ -85,16 +85,50 @@
 .hero-desc {
   display: none;
   @media screen and (min-width: 768px) {
-    display: block;
+    display: flex;
+    gap: 33px;
+    align-items: center;
   }
+
+  &__text {
+    font-size: 12px;
+    line-height: 1.42;
+    width: 151px;
+
+    @media screen and (min-width: 1200px) {
+      font-size: 14px;
+      width: 210px;
+    }
+  }
+}
+
+// .hero-desc__image-container {
+//   width: 100px;
+//   height: 100px;
+//   position: relative;
+// }
+
+.hero-desc__image {
+  width: 152px;
+  @media screen and (min-width: 1200px) {
+    width: 225px;
+  }
+}
+
+.hero__main-img {
+  position: absolute;
+  // top: 0;
+  // left: 0;
 }
 
 .btn-list {
   display: flex;
   gap: 8px;
+  margin-bottom: 28px;
 
   @media screen and (min-width: 1200px) {
     gap: 12px;
+    margin-bottom: 54px;
   }
 }
 
