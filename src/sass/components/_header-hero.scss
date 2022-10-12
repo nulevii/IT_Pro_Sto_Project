@@ -1,10 +1,4 @@
 // .header-hero {
-//   @media screen and (min-width: 768px) {
-//     height: 415px;
-//   }
-// 	@media screen and (min-width: 1200px) {
-// 		height: 664px;
-// 	}
 // }
 
 .container--background-dots {
@@ -31,22 +25,20 @@
 }
 
 .hero__img {
-  // position: absolute;
-  // bottom: 0;
-  // left: 0;
+  // background: rgba(252, 252, 252, 0.44);
+  // filter: blur(50px);
 }
 
 .hero__main-img {
   min-width: 150px;
-  // position: relative;
   position: absolute;
   left: 27%;
   bottom: 0;
+
+  // background: rgba(252, 252, 252, 0.44);
+  // backdrop-filter: blur(50px);
+
   @media screen and (min-width: 768px) {
     left: 54%;
   }
 }
-
-// .hero__bottom-part {
-//   position: relative;
-// }
