@@ -49,6 +49,7 @@
       }
   }
   .read-more_youtube{
+
     position: relative;
     height: 199px;
     background-color: var(--color-black-main); 
@@ -71,6 +72,7 @@
     transition-property: transform, fill;
     transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  
   }
   .read-more__button-send{
     font-size: 12px;
@@ -88,19 +90,21 @@
     scale: 0.8;
   }
   .read-more__icon-youtube{
+
     fill: var(--color-white-main);
     width: 28px;
     height: 28px;
     transition-property: transform, fill;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
   }
   .read-more__paragraph{
     
     font-size:  14px;
     line-height:  1.43;
     letter-spacing: normal;
-  
+
     color: var(--color-black-main);
     @media screen and (min-width: 768px) {
         font-size:  16px;
