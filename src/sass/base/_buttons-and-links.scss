@@ -130,6 +130,13 @@
 .arrow-two {
   stroke: currentColor;
   width: 42px;
+
+  padding: 0;
+  height: 15px;
+  
+  color: var(--color-black-main);
+  background-color: transparent;
+  border: none;
   
   &:hover {
     // transform-origin: center left;
