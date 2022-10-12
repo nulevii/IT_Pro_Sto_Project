@@ -21,11 +21,15 @@
   border-radius: 50%;
 }
 .customer-reviews__comment {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   margin: auto;
+  min-height: 256px;
+  height: 100%;
   margin-bottom: 32px;
   padding: 34px 39px;
   border-radius: 10px;
-
   line-height: calc(31 / 12);
   text-align: center;
 
@@ -33,7 +37,7 @@
 
   @media screen and (min-width: 768px) {
     padding: 29px 80px;
-
+    min-height: auto;
     font-weight: 500;
     font-size: 14px;
     line-height: calc(26 / 14);
@@ -100,7 +104,8 @@
   height: 12px;
   border-radius: 50%;
   color: var(--color-gray-radio);
-
+  @extend %animation-style;
+  transition-property: background-color;
   &:hover {
     cursor: pointer;
   }
