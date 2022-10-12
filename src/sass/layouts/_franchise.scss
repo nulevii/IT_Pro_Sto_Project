@@ -16,131 +16,107 @@
 //   }
   
 .franchise {
-    position: relative;
-    
-    width: 100%;
-    max-width: 450px;
-    padding:28px ;     
-    border-radius: 10px;
-    border:2px solid #F8D24E;
-    background-color: var(--color-white-main);
-    @media screen and (min-width: 768px) {
-        width: 568px;
-        max-width: 568px;       
-        padding:32px 60px ;    
-      }
- 
-  }
-  .franchise__button-close{
-    position: absolute;
-    top: 9px;
-    right: 9px;
-    padding: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: transparent;
-    border: none;
-    border-radius: 50%;
+  position: relative;
+  
+  width: 100%;
+  max-width: 450px;
+  padding:26px ;     
+  border-radius: 10px;
+  border:2px solid #F8D24E;
+  background-color: var(--color-white-main);
+  @media screen and (min-width: 768px) {
+      width: 568px;
+      max-width: 568px;       
+      padding:30px 58px ;    
+    }
 
-    transition-property: transform,color; 
-    transition-duration: 250ms; 
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-
-    @media screen and (min-width: 768px) {
-        top:15px;
-        right: 15px;  
-      }     
-  }
-  .franchise__button-close:hover, .franchise__button-close:focus{
-    background-color: var(--color-green-button);
-    transform:  scale(1.2);
-  }
-  .franchise__icon-button {  
-    height: 19px;
-    width: 19px;
 }
+
 .franchise__subtitle{
-    font-family: Seymour One;   
-    font-size: 16px;
-    line-height: 1.5;
-    color: var(--color-black-main);
-    text-align: center;
-    margin-bottom: 20px;
-    @media screen and (min-width: 768px) {
-        margin: 0 auto;
-        margin-bottom: 32px;  
-        font-size: 20px;
-        line-height: 1.4; 
-        width: 322px;       
-      }
+  font-family: Seymour One;   
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: normal;
+  color: var(--color-black-main);
+  text-align: center;
+  margin-bottom: 20px;
+  @media screen and (min-width: 768px) {
+      margin: 0 auto;
+      margin-bottom: 32px;  
+      font-size: 20px;
+      line-height: 1.4; 
+      width: 322px;       
+    }
 }
 .franchise__paragraph{
 
 font-size:  14px;
 line-height:  1.43;
 padding-bottom: 24px;
+letter-spacing: normal;
 
 color: var(--color-black-main);
 @media screen and (min-width: 768px) {
-    font-size:  16px;
-    line-height:  1.4;
-    font-weight: 400; 
-    // width: 453px;       
-  }
+  font-size:  16px;
+  line-height:  1.4;
+  font-weight: 400; 
+  // width: 453px;       
+}
 }
 
 .franchise__date {
-    width: 100%;
-    max-width: 450px;
-    padding: 8px 12px;
-    border-radius: 10px;
-    border: 1px solid  #84A178;
-    outline: transparent;
-    background-color: rgba(248, 210, 78, 0.1);
-    @media screen and (min-width: 768px) {
-      padding:11px 16px;    
-    }
-    
+  width: 100%;
+  max-width: 450px;
+  padding: 8px 12px;
+  border-radius: 10px;
+  border: 1px solid  #84A178;
+  outline: transparent;
+  background-color: rgba(248, 210, 78, 0.1);
+  @media screen and (min-width: 768px) {
+    padding:11px 16px;    
   }
+  
+}
 .frunchise__field--comment{
-    height: 64px;
-    
-    @media screen and (min-width: 768px) {
-      height: 84px;     
+  height: 64px;  
+  @media screen and (min-width: 768px) {
+  height: 84px;     
+
+  }
+}
+.frunchise__date--comment{
+  height: 100%;
+  resize: none;
+ 
+}
+.franchise__mark{
+  font-size: 12px;
+  line-height: 1.42;
+  color: var(--color-black-main);
+  
+  @media screen and (min-width: 768px) {    
+      font-size: 14px;
+      line-height: 1.43;            
     }
 }
-  .frunchise__date--comment{
-    height: 100%;
-  }
-  .franchise__mark{
-    font-size: 12px;
-    line-height: 1.42;
-    color: var(--color-black-main);
-    
-    @media screen and (min-width: 768px) {    
-        font-size: 14px;
-        line-height: 1.43;            
-      }
-  }
 
 .franchise__button-send{
-    font-size: 12px;
-     line-height: 1.25;
-     display: block;   
-    margin: 0 auto;
-    margin-top: 24px;
-    @media screen and (min-width: 768px) {
-        font-size: 14px;
-        line-height: 1.21;  
-        margin-top: 32px;
-      }
+  font-size: 12px;
+   line-height: 1.25;
+   display: block;   
+  margin: 0 auto;
+  margin-top: 24px;
+  @media screen and (min-width: 768px) {
+      font-size: 14px;
+      line-height: 1.21;  
+      margin-top: 32px;
+    }
 }
 .franchise__field{   
-   margin-bottom: 12px;
-   @media screen and (min-width: 768px) {   
-    width: 368px;
-   margin: 0 auto;
-   margin-bottom: 16px;
-  }   
+ margin-bottom: 12px;
+ @media screen and (min-width: 768px) {   
+  width: 368px;
+ margin: 0 auto;
+ margin-bottom: 16px;
+}   
 }
