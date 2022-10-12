@@ -126,3 +126,32 @@
   top: 1px;
   margin-left: 2px;
 }
+// кнопка и иконка - закрытие модального окна
+.modal-button-close{
+  position: absolute;
+  top: 9px;
+  right: 9px;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: transparent;
+  border: none;
+  border-radius: 50%;
+  transition-property: transform,color; 
+  transition-duration: 250ms;
+  &:hover, &:focus{
+    background-color: var(--color-yellow-main);
+    transform:  scale(1.2);
+  } 
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  @media screen and (min-width: 768px) {
+      top:15px;
+      right: 15px;  
+    }     
+}
+.modal__icon-button {  
+  height: 19px;
+  width: 19px;  
+ }
+// 
