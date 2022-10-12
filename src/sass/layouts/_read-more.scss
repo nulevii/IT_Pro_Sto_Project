@@ -20,7 +20,7 @@
     // height: 459px;
     width: 100%;
     max-width: 450px;
-    padding:28px ;     
+    padding:26px ;     
     border-radius: 10px;
     border:2px solid #F8D24E;
     margin-bottom: 20px;
@@ -29,43 +29,16 @@
         width: 568px;
         max-width: 568px;
         height: 449px;
-        padding:32px 60px ;    
+        padding:30px 58px ;    
       }
- 
+  
   }
-  .read-more__button-close{
-    position: absolute;
-    top: 9px;
-    right: 9px;
-    padding: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: transparent;
-    border: none;
-    border-radius: 50%;
-
-    transition-property: transform,color; 
-    transition-duration: 250ms; 
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-
-    @media screen and (min-width: 768px) {
-        top:15px;
-        right: 15px;  
-      }     
-  }
-  .read-more__button-close:hover, .read-more__button-close:focus{
-    background-color: var(--color-green-button);
-    transform:  scale(1.2);
-  }
-  .read-more__icon-button {  
-    height: 19px;
-    width: 19px;
-}
-.read-more__subtitle{
+  
+  .read-more__subtitle{
     font-family: Seymour One;   
     font-size: 16px;
     line-height: 1.5;
+    letter-spacing: normal;
     color: var(--color-black-main);
     text-align: center;
     margin-bottom: 20px;
@@ -74,8 +47,9 @@
         font-size: 20px;
         line-height: 1.4; 
       }
-}
-.read-more_youtube{
+  }
+  .read-more_youtube{
+
     position: relative;
     height: 199px;
     background-color: var(--color-black-main); 
@@ -83,8 +57,8 @@
     @media screen and (min-width: 768px) {
         margin-bottom: 32px;   
       }
-}
-.button-youtube{
+  }
+  .button-youtube{
     position: absolute;               
     top: 50%;
     left: 50%;                        
@@ -98,8 +72,9 @@
     transition-property: transform, fill;
     transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-.read-more__button-send{
+  
+  }
+  .read-more__button-send{
     font-size: 12px;
      line-height: 1.25;
      display: block;   
@@ -108,25 +83,28 @@
         font-size: 14px;
         line-height: 1.21;  
       }
-}
-.button-youtube:hover .read-more__icon-youtube{
+  }
+  .button-youtube:hover .read-more__icon-youtube{
+  
     fill:var(--color-green-button);
     scale: 0.8;
-}
-.read-more__icon-youtube{
+  }
+  .read-more__icon-youtube{
+
     fill: var(--color-white-main);
     width: 28px;
     height: 28px;
     transition-property: transform, fill;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-.read-more__paragraph{
+
+  }
+  .read-more__paragraph{
     
     font-size:  14px;
     line-height:  1.43;
-    
-    
+    letter-spacing: normal;
+
     color: var(--color-black-main);
     @media screen and (min-width: 768px) {
         font-size:  16px;
