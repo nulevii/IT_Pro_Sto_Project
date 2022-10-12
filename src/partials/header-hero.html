@@ -1,5 +1,5 @@
 <section class="header-hero section">
-  <div class="container">
+  <div class="container container__imgs">
     <nav class="nav">
       <img
         class="logo nav__logo"
@@ -8,23 +8,36 @@
       />
       <ul class="list nav__list">
         <li class="nav__item">
-          <a class="nav__item-link link" href="">Home</a>
+          <a href="" class="nav__item-link link" data-nav-link>Home</a>
         </li>
         <li class="nav__item">
-          <a class="nav__item-link link" href="">How it’s made?</a>
+          <a href="" class="nav__item-link link" data-nav-link
+            >How it’s made?</a
+          >
         </li>
         <li class="nav__item">
-          <a class="nav__item-link link" href="">Our products</a>
+          <a href="" class="nav__item-link link" data-nav-link>Our products</a>
         </li>
         <li class="nav__item">
-          <a class="nav__item-link link" href="">Contact</a>
+          <a href="" class="nav__item-link link" data-nav-link>Contact</a>
         </li>
       </ul>
-      <svg class="burger-icon" width="32" height="32">
-        <use href="./images/icons.svg#icon-burger"></use>
-      </svg>
+      <button
+        type="button"
+        class="mobile-menu__button js-open-menu"
+        aria-controls="menu-container_mobile"
+      >
+        <svg
+          class=""
+          width="32"
+          height="32"
+          aria-label="mobile menu open-button"
+        >
+          <use href="./images/icons.svg#icon-burger"></use>
+        </svg>
+      </button>
 
-      <button class="button buy__button" type="button" data-modal-open>
+      <button class="button buy__button" type="button">
         Buy Now
         <svg height="12" width="12">
           <use class="arrow-one" href="./images/icons.svg#arrow-one" />
@@ -76,17 +89,113 @@
           src="./images/header-hero/plate_ice-cream.png"
           alt="a plate with ice cream"
         />
+
+        <!-- <div class="hero-desc__image-container">
+          <picture class="hero-desc__image">
+            <source media="(min-width: 1200px)"
+              srcset="./images/hero/img1_lg-@1x.png 1x, ./images/hero/img1_lg-@2x.png 2x" type="image/png" />
+            <source media="(min-width: 768px)"
+              srcset="./images/hero/img1_md-@1x.png 1x, ./images/hero/img1_md-@2x.png 2x" type="image/png" />
+            <img class="hero__main-img" src="./images/hero/img1_md-@1x.png" alt="a plate with ice cream" />
+          </picture>
+        </div> -->
+
         <p class="hero-desc__text">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
           eiusmod tempor incididunt ut labore et
         </p>
       </div>
       <!-- <img class="hero__bg-image" src="./images/header-hero/dots_mobile.png" alt="Big ice cream"> -->
-      <img
-        class="hero__main-image"
-        src="./images/header-hero/ice_cream.png"
-        alt="Big ice cream"
-      />
+      <!-- <img class="hero__main-image" src="./images/header-hero/ice_cream.png" alt="Big ice cream"> -->
+
+      <picture class="hero__img">
+        <source
+          media="(min-width: 1200px)"
+          srcset="
+            ./images/hero/img2_lg-@1x.png 1x,
+            ./images/hero/img2_lg-@2x.png 2x
+          "
+          type="image/png"
+        />
+        <source
+          media="(min-width: 768px)"
+          srcset="
+            ./images/hero/img2_md-@1x.png 1x,
+            ./images/hero/img2_md-@2x.png 2x
+          "
+          type="image/png"
+        />
+        <source
+          media="(max-width: 767px)"
+          srcset="
+            ./images/hero/img2_sm-@1x.png 1x,
+            ./images/hero/img2_sm-@2x.png 2x
+          "
+          type="image/png"
+        />
+        <img
+          class="hero__main-img"
+          src="./images/hero/img2_sm-@1x.png"
+          alt="ice-cream-mobile"
+        />
+      </picture>
     </div>
+  </div>
+
+  <div class="mobile-window">
+    <nav class="nav container mobile-menu js-menu-container">
+      <div class="mobile-menu__header">
+        <img
+          class="logo nav__logo"
+          src="./images/header-hero/logo.png"
+          alt="logo"
+        />
+        <button
+          type="button"
+          class="mobile-menu__button js-close-menu"
+          aria-controls="menu-container_mobile"
+        >
+          <svg
+            class=""
+            width="32"
+            height="32"
+            aria-label="mobile menu close-button"
+          >
+            <use
+              class="mobile-menu--close"
+              href="./images/icons.svg#icon-burger-close"
+            ></use>
+          </svg>
+        </button>
+      </div>
+
+      <ul class="list nav__list-mobile">
+        <li class="nav__item-mobile">
+          <a href="" class="nav__item-link-mobile link" data-nav-link>Home</a>
+        </li>
+        <li class="nav__item-mobile">
+          <a href="" class="nav__item-link-mobile link" data-nav-link
+            >How it’s made?</a
+          >
+        </li>
+        <li class="nav__item-mobile">
+          <a href="" class="nav__item-link-mobile link" data-nav-link
+            >Our products</a
+          >
+        </li>
+        <li class="nav__item-mobile">
+          <a href="" class="nav__item-link-mobile link" data-nav-link
+            >Contact</a
+          >
+        </li>
+      </ul>
+
+      <button class="button buy__button buy__button--mobile" type="button">
+        <span> Buy Now</span>
+        <svg height="12" width="12">
+          <use class="arrow-one" href="./images/icons.svg#arrow-one" />
+        </svg>
+      </button>
+    </nav>
   </div>
 </section>
