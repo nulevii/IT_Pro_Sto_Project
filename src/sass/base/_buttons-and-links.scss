@@ -31,7 +31,14 @@
     border-color: var(--color-grey-main);
   }
 }
+
+.link {
+  transition-property: color;
+  @extend %animation-style;
+}
 .button {
+  @extend %animation-style;
+  transition-property: background-color, border, color;
   padding: 12px 34px;
   font-family: var(--default-font);
   font-style: normal;
@@ -45,6 +52,7 @@
 
   outline: none;
   border: none;
+
   &.products__button {
     padding: 0;
     @extend %button-style-secondary;
@@ -158,7 +166,7 @@
 }
 
 // кнопка и иконка - закрытие модального окна
-.modal-button-close{
+.modal-button-close {
   position: absolute;
   top: 9px;
   right: 9px;
@@ -169,20 +177,20 @@
   background-color: transparent;
   border: none;
   border-radius: 50%;
-  transition-property: transform,color; 
+  transition-property: transform, color;
   transition-duration: 250ms;
-  &:hover, &:focus{
+  &:hover,
+  &:focus {
     background-color: var(--color-yellow-main);
-    transform:  scale(1.2);
-  } 
+    transform: scale(1.2);
+  }
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   @media screen and (min-width: 768px) {
-      top:15px;
-      right: 15px;  
-    }     
+    top: 15px;
+    right: 15px;
+  }
 }
-.modal__icon-button {  
+.modal__icon-button {
   height: 19px;
-  width: 19px;  
- }
-
+  width: 19px;
+}

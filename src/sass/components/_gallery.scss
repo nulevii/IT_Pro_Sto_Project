@@ -10,11 +10,11 @@
     padding-bottom: 123px;
   }
 }
-.swiper {
+.gallery__swiper {
   max-width: 100%;
   min-width: 279px;
   width: 100%;
-  border-radius: 7.4px;
+  border-radius: 10px;
   @media screen and (min-width: 768px) {
     width: 704px;
     height: 327px;
@@ -30,13 +30,18 @@
 .gallery__image {
   object-fit: cover;
   width: 100%;
-  border-radius: 7.4px;
+
+  max-height: 170px;
+  border-radius: 10px;
 
   @media screen and (min-width: 768px) {
     border-radius: 18px;
+    height: 327px;
+    max-height: none;
   }
 
   @media screen and (min-width: 1200px) {
     border-radius: 24px;
+    height: 422px;
   }
 }

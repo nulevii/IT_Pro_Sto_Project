@@ -1,5 +1,9 @@
 .gallery-customers-background {
   background-image: url('../images/background/icecream-7.jpg');
+  // background-image: url('../images/background/icecream-7-1200.jpg');
+  // @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+  //   background-image: url('../images/background/icecream-7-2400.jpg');
+  // }
   background-color: var(--color-green-main);
   background-repeat: repeat-x;
 
