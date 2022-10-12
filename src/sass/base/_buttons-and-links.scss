@@ -135,6 +135,36 @@
   margin-left: 2px;
 }
 
+.arrow-two {
+  stroke: currentColor;
+  width: 42px;
+
+  padding: 0;
+  height: 15px;
+  
+  color: var(--color-black-main);
+  background-color: transparent;
+  border: none;
+  
+  &:hover {
+    // transform-origin: center left;
+    transform: scaleX(1.2);
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    
+    cursor: pointer;
+  }
+
+  &:focus {
+    // transform-origin: center left;
+    transform: scale(1.5);
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    
+    cursor: pointer;
+  }
+}
+
 // кнопка и иконка - закрытие модального окна
 .modal-button-close {
   position: absolute;
