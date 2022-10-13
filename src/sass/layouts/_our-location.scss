@@ -1,5 +1,7 @@
 .backdrop.is-hidden-location {
-  visibility: hidden;
+    opacity: 0;
+    pointer-events: none;
+    visibility: hidden;
 }
 .location {
   top: 50%;
