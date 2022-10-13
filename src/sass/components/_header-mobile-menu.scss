@@ -1,17 +1,14 @@
 .mobile-menu {
-  visibility: hidden;
+  position: fixed;
   top: 0;
   left: 0;
-  position: fixed;
-  z-index: 999;
-  width: 100vw;
   transform: translateX(100%);
-  display: block;
+  width: 100vw;
   height: 100vh;
-  // margin-left: auto;
-  // margin-right: auto;
-  // padding-left: 20px;
-  // padding-right: 20px;
+  display: block;
+  visibility: hidden;
+  z-index: 999;
+  overflow: auto;
 
   background-color: var(--color-green-main);
 
@@ -40,7 +37,7 @@
     padding-right: 20px;
 
     @media screen and (min-width: 768px) {
-      margin-bottom: 76px;
+      margin-bottom: 75px;
     }
   }
 }
@@ -63,6 +60,9 @@
   line-height: 1.22;
   margin-bottom: 51px;
   transition: color var(--default-animation-duration) var(--default-animation);
+  @media screen and (min-width: 768px) {
+    margin-bottom: 75px;
+  }
 }
 
 .nav__item-mobile:focus .nav__item-link-mobile,
