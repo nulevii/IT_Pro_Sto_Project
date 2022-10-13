@@ -137,14 +137,17 @@
 
   &--ice-cream {
     background-color: var(--color-green-secondary);
+    color: var(--color-green-secondary);
   }
 
   &--ice-coffee {
     background-color: var(--color-yellow-secondary);
+    color: var(--color-yellow-secondary);
   }
 
   &--milkshakes {
     background-color: var(--color-brown-main);
+    color: var(--color-brown-main);
   }
 }
 
@@ -206,62 +209,65 @@
   border: none;
 }
 
-.products__background {
-  position: absolute;
+.products__card {
+  &::before {
+    content: '';
+    position: absolute;
+    display: block;
+    margin-bottom: 20px;
 
-  top: -23%;
-  width: 200px;
-  height: 200px;
+    top: -25%;
+    width: 200px;
+    height: 210px;
 
-  background-position: top 25px center;
+    border-radius: 50%;
 
-  border-radius: 50%;
+    background-color: #aec6a5;
+    background-repeat: no-repeat;
+    background-size: 200px;
+    background-position: top center, bottom center;
 
-  @media screen and (min-width: 1200px) {
-    top: -28%;
-    width: 300px;
-    height: 300px;
+    @media screen and (min-width: 768px) {
+      top: -28%;
+    }
+
+    @media screen and (min-width: 1200px) {
+      margin-bottom: 30px;
+
+      top: -33%;
+      width: 301px;
+      height: 316px;
+      background-size: 300px;
+    }
   }
-
-  &--ice-cream {
-    background: linear-gradient(
-        0deg,
-        rgba(156, 190, 143, 0.7),
-        rgba(156, 190, 143, 0.7)
-      ),
-      #d9d9d9;
+  &--ice-cream::before {
+    background-image: url('../images/products/products-sm1@1x.png'),
+      linear-gradient(0deg, currentColor, currentColor);
     box-shadow: 0px 5.34219px 20.0332px rgba(10, 136, 23, 0.25);
   }
-  &--ice-coffee {
-    background: linear-gradient(
-        0deg,
-        rgba(248, 210, 78, 0.7),
-        rgba(248, 210, 78, 0.7)
-      ),
-      #d9d9d9;
-    box-shadow: 0px 5.40397px 20.2649px rgba(153, 114, 23, 0.25);
+
+  &--ice-coffee::before {
+    background-image: url('../images/products/products-sm2@1x.png'),
+      linear-gradient(0deg, currentColor, currentColor);
+    box-shadow: 0px 8px 30px rgba(153, 114, 23, 0.25);
   }
 
-  &--milkshakes {
-    background: linear-gradient(
-        0deg,
-        rgba(213, 117, 63, 0.7),
-        rgba(213, 117, 63, 0.7)
-      ),
-      #d9d9d9;
-    box-shadow: 0px 5.41333px 20.3px rgba(0, 0, 0, 0.25);
+  &--milkshakes::before {
+    background-image: url('../images/products/products-sm3@1x.png'),
+      linear-gradient(0deg, currentColor, currentColor);
+    box-shadow: 0px 8px 30px rgba(0, 0, 0, 0.25);
   }
 }
 
-.products__image {
-  width: 200px;
-  height: 200px;
-  border-radius: 50%;
-  align-items: center;
-  translate: (0 -5%);
+// .products__image {
+//   width: 200px;
+//   height: 200px;
+//   border-radius: 50%;
+//   align-items: center;
+//   translate: (0 -5%);
 
-  @media screen and (min-width: 1200px) {
-    width: 300px;
-    height: 300px;
-  }
-}
+//   @media screen and (min-width: 1200px) {
+//     width: 300px;
+//     height: 300px;
+//   }
+// }

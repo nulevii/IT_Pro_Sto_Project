@@ -41,13 +41,30 @@
     padding-bottom: 20px;
     text-decoration: none;
     color: var(--color-white-main);
-
+// 
+   position: relative;  
+// 
     &:hover,
     &:focus {
       color: var(--color-yellow-main);
+      
     }
   }
 }
+// кастомный курсор
+.nav__icon{
+  position:absolute;
+  fill: transparent;  
+  // stroke: black;
+  width: 24px;
+  height: 33px;
+  left: 70%;
+  top: 70%;
+}
+.nav__item-link:hover, .nav__item-link:focus .nav__icon{
+  stroke: black;
+} 
+// кастомный курсор
 
 .mobile-menu__button {
   display: block;
