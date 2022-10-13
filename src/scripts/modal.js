@@ -16,21 +16,21 @@
   }
 })();
 
-// INGRIDIENTS
-(() => {
-  const refs = {
-    openModalBtnIngr: document.querySelector('[data-modal-open-ingr]'),
-    closeModalBtnIngr: document.querySelector('[data-modal-close-ingr]'),
-    modalIngr: document.querySelector('[data-modal-ingr]'),
-  };
+// // INGRIDIENTS
+// (() => {
+//   const refs = {
+//     openModalBtnIngr: document.querySelector('[data-modal-open-ingr]'),
+//     closeModalBtnIngr: document.querySelector('[data-modal-close-ingr]'),
+//     modalIngr: document.querySelector('[data-modal-ingr]'),
+//   };
 
-  refs.openModalBtnIngr.addEventListener('click', toggleModal);
-  refs.closeModalBtnIngr.addEventListener('click', toggleModal);
+//   refs.openModalBtnIngr.addEventListener('click', toggleModal);
+//   refs.closeModalBtnIngr.addEventListener('click', toggleModal);
 
-  function toggleModal() {
-    refs.modalIngr.classList.toggle('is-hidden-ingr');
-  }
-})();
+//   function toggleModal() {
+//     refs.modalIngr.classList.toggle('is-hidden-ingr');
+//   }
+// })();
 
 // // READ MORE
 // (() => {

@@ -1,8 +1,8 @@
-.conacts {
+.contacts {
   background-color: transparent;
 }
 
-.conacts__cards-list {
+.contacts__cards-list {
   @media screen and (min-width: 768px) {
     display: flex;
     gap: 16px;
@@ -13,7 +13,7 @@
     margin-bottom: 64px;
   }
 }
-.conacts__cards-item {
+.contacts__cards-item {
   padding: 40px 32px;
   max-width: 450px;
   width: 100%;
@@ -179,7 +179,7 @@
     font-size: 16px;
   }
 }
-.conacts__list-button {
+.contacts__list-button {
   text-align: center;
   @media screen and (min-width: 768px) {
     display: flex;
@@ -212,7 +212,7 @@
   }
 }
 
-.conacts__button {
+.contacts__button {
   margin-top: 32px;
   margin-bottom: 16px;
   @media screen and (min-width: 768px) {
