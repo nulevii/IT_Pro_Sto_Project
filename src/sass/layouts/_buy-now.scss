@@ -44,7 +44,6 @@
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   outline: transparent;
   border: none;
-
 }
 
 .modal-window {
@@ -282,7 +281,7 @@
   width: 0;
   height: 0;
 
-  &:checked + .modal-window__item .modal-window__card {
+  &:checked + .modal-window__card {
     &--first {
       background-color: #96af8c;
     }
