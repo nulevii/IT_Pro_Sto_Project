@@ -35,7 +35,28 @@
 .link {
   transition-property: color;
   @extend %animation-style;
+
+  &.products__link {
+    @extend %button-style-secondary;
+
+    padding: 4px 11px;
+    font-size: 8px;
+    border-radius: 8px;
+    text-decoration: none;
+    color: var(--color-black-main);
+    font-weight: 600;
+
+    @media screen and (min-width: 1200px) {
+      padding: 12px 34px;
+      font-weight: 600;
+      font-size: 14px;
+      line-height: calc(18 / 14);
+
+      border-radius: 10px;
+    }
+  }
 }
+
 .button {
   @extend %animation-style;
   transition-property: background-color, border, color;
@@ -49,29 +70,9 @@
   color: var(--color-black-main);
 
   border-radius: 10px;
-  
+
   outline: none;
   border: none;
-
-  &.products__button {
-    padding: 0;
-    @extend %button-style-secondary;
-    width: 62px;
-    height: 24px;
-    font-size: 8px;
-
-    border-radius: 8px;
-    @media screen and (min-width: 1200px) {
-      width: auto;
-      height: auto;
-      padding: 12px 34px;
-      font-weight: 600;
-      font-size: 14px;
-      line-height: calc(18 / 14);
-
-      border-radius: 10px;
-    }
-  }
 
   &.read-more__button {
     @extend %button-style-main;
@@ -108,6 +109,8 @@
     font-size: 8px;
     line-height: calc(9.75 / 8);
     color: var(--color-yellow-main);
+    text-decoration-line: underline;
+    border: none;
 
     @media screen and (min-width: 1200px) {
       font-size: 14px;
@@ -136,7 +139,6 @@
   margin-left: 2px;
 }
 
-
 .arrow-two {
   stroke: currentColor;
   width: 42px;
@@ -152,15 +154,15 @@
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
   &:hover {
-    transform-origin: center left;
-    transform: scaleX(1.2);
+    transform-origin: left;
+    transform: scaleX(1.25);
 
     cursor: pointer;
   }
 
   &:focus {
-    transform-origin: center left;
-    transform: scale(1.5);
+    transform-origin: left;
+    transform: scale(1.25);
 
     cursor: pointer;
   }

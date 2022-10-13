@@ -1,18 +1,20 @@
+.page-header {
+  min-width: 320px;
+  background-color: var(--color-green-main);
+}
+
 .nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding-top: 12px;
-  padding-bottom: 61px;
 
   @media screen and (min-width: 768px) {
     padding-top: 20px;
-    padding-bottom: 40px;
   }
 
   @media screen and (min-width: 1200px) {
     padding-top: 18px;
-    padding-bottom: 45px;
   }
 
   &__logo {
@@ -37,33 +39,33 @@
   }
 
   &__item-link {
+    position: relative;
     padding-top: 20px;
     padding-bottom: 20px;
     text-decoration: none;
     color: var(--color-white-main);
-// 
-   position: relative;  
-// 
+    transition: color 250ms ease-in-out;
+
     &:hover,
     &:focus {
       color: var(--color-yellow-main);
-      
     }
   }
 }
 // кастомный курсор
-.nav__icon{
-  position:absolute;
-  fill: transparent;  
+.nav__icon {
+  position: absolute;
+  fill: transparent;
   // stroke: black;
-  width: 24px;
-  height: 33px;
-  left: 70%;
-  top: 70%;
+  width: 20px;
+  height: 25px;
+  left: 98%;
+  top: 52%;
 }
-.nav__item-link:hover, .nav__item-link:focus .nav__icon{
+.nav__item-link:hover,
+.nav__item-link:focus .nav__icon {
   stroke: black;
-} 
+}
 // кастомный курсор
 
 .mobile-menu__button {
@@ -82,7 +84,7 @@
   }
 }
 
-.buy__button {
+.buy__button--visible {
   display: none;
 
   @media screen and (min-width: 768px) {
@@ -95,4 +97,8 @@
       display: none;
     }
   }
+}
+
+.buy__button-arrow {
+  margin-left: 12px;
 }

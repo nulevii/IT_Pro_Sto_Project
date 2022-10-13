@@ -1,8 +1,8 @@
-.conacts {
+.contacts {
   background-color: transparent;
 }
 
-.conacts__cards-list {
+.contacts__cards-list {
   @media screen and (min-width: 768px) {
     display: flex;
     gap: 16px;
@@ -13,7 +13,7 @@
     margin-bottom: 64px;
   }
 }
-.conacts__cards-item {
+.contacts__cards-item {
   padding: 40px 32px;
   max-width: 450px;
   width: 100%;
@@ -170,6 +170,7 @@
   font-weight: 500;
   font-size: 12px;
   line-height: 1.86;
+  letter-spacing: var(--lt-sp-main);
 
   color: var(--color-grey-main);
   @media screen and (min-width: 768px) and (max-width: 1199px) {
@@ -179,7 +180,7 @@
     font-size: 16px;
   }
 }
-.conacts__list-button {
+.contacts__list-button {
   text-align: center;
   @media screen and (min-width: 768px) {
     display: flex;
@@ -212,7 +213,7 @@
   }
 }
 
-.conacts__button {
+.contacts__button {
   margin-top: 32px;
   margin-bottom: 16px;
   @media screen and (min-width: 768px) {
