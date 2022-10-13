@@ -33,6 +33,7 @@
 
 }
 
+
 .location__subtitle{
   font-family: Seymour One;   
   font-size: 16px;
@@ -49,9 +50,15 @@
 }
 .location_map{
   margin-bottom: 24px;
+  width:100%;
+  height: 224px;
   @media screen and (min-width: 768px) {
       margin-bottom: 32px;   
     }
+}
+.map--google{
+  width:100%;
+  height: 100%;
 }
 .location__button-send{
   font-size: 12px;
@@ -64,10 +71,10 @@
     }
 
 }
-.location_image{
-  height: 199px;
-  width: 100%;
-  @media screen and (min-width: 768px) {
-      height: 260px;     
-    }
-}
+// .location_image{
+//   height: 199px;
+//   width: 100%;
+//   @media screen and (min-width: 768px) {
+//       height: 260px;     
+//     }
+// }

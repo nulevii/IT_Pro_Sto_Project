@@ -16,12 +16,12 @@
   }
 
   ::-webkit-scrollbar-thumb {
-    background-color: #f8d24e !important;
+    background-color: #fcecb4 !important;
     border-radius: 2rem !important;
   }
 
   ::-webkit-scrollbar-corner {
-    background: #f8d24e !important;
+    background: #fcecb4 !important;
   }
 
   @media screen and (min-width: 768px) {
@@ -55,7 +55,7 @@
   overflow-y: auto;
   overflow-x: hidden;
   scrollbar-width: thin;
-  scrollbar-color: var(--color-yellow-main) transparent;
+  scrollbar-color: #fcecb4 transparent;
   position: relative;
 
   width: 100%;

@@ -1,22 +1,20 @@
 .mobile-menu {
-  visibility: hidden;
+  position: fixed;
   top: 0;
   left: 0;
-  position: fixed;
-  width: 100vw;
   transform: translateX(100%);
+  width: 100vw;
+  height: 100vh;
   display: block;
-  margin-left: auto;
-  margin-right: auto;
-  padding-left: 20px;
-  padding-right: 20px;
+  visibility: hidden;
+  z-index: 2;
+  overflow: auto;
 
   background-color: var(--color-green-main);
 
   transition: transform, visibility;
-  transition-duration: var(--default-animation-duration);
-  transition-duration: var(--default-animation-npmduration);
-  transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+  transition-duration: 350ms;
+  transition-timing-function: ease-in-out;
 
   @media screen and (min-width: 768px) {
     display: block;
@@ -34,9 +32,11 @@
     width: 100%;
     justify-content: space-between;
     margin-bottom: 51px;
+    padding-left: 20px;
+    padding-right: 20px;
 
     @media screen and (min-width: 768px) {
-      margin-bottom: 76px;
+      margin-bottom: 75px;
     }
   }
 }
@@ -58,7 +58,12 @@
   font-size: 32px;
   line-height: 1.22;
   margin-bottom: 51px;
-  transition: color var(--default-animation-duration) var(--default-animation);
+  transition-property: color;
+  @extend %animation-style;
+
+  @media screen and (min-width: 768px) {
+    margin-bottom: 75px;
+  }
 }
 
 .nav__item-mobile:focus .nav__item-link-mobile,
@@ -69,4 +74,14 @@
 .nav__item-link-mobile {
   text-decoration: none;
   color: var(--color-white-main);
+}
+
+.mobile-menu__button {
+  @extend %animation-style;
+  transition-property: color, stroke;
+  stroke: var(--color-white-main);
+}
+.mobile-menu__button:hover {
+  fill: var(--color-yellow-main);
+  stroke: var(--color-yellow-main);
 }

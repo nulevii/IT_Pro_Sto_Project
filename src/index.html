@@ -13,28 +13,24 @@
     href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&family=Seymour+One&display=swap"
     rel="stylesheet" />
 
-  <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/modern-normalize/modern-normalize.min.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
   <link rel="stylesheet" href="./sass/index.scss" />
-  <script type="module" src="./scripts/index.js"></script>
-</head>
-
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/modern-normalize/modern-normalize.min.css">
-<link rel="stylesheet" href="./sass/index.scss" />
-
 
 </head>
+
 
 <!-- Main flow -->
 
 <!-- Вероніка Старт -->
 <header class="page-header">
-  <include src="./partials/header-hero.html"></include>
-  <!-- Вероніка Фініш -->
+  <include src="./partials/header.html"></include>
 </header>
 
 <main class="page-main">
+  <include src="./partials/hero.html"></include>
+  <!-- Вероніка Фініш -->
+
   <!-- Ілья Старт -->
   <include src="./partials/products.html"></include>
 
@@ -50,7 +46,7 @@
 </main>
 
 <!-- Андрій Старт -->
-<footer class="page-footer">
+<footer class="page-footer footer section">
   <include src="./partials/footer.html"></include>
   <!-- Андрій Фініш -->
 </footer>
@@ -58,19 +54,19 @@
 
 
 <!-- Modal Windows -->
-<!-- <include src="./partials/modal-windows/mobile-header.html"></include> -->
-<!-- <include src="./partials/modal-windows/ingridients.html"></include> -->
+<include src="./partials/modal-windows/mobile-header.html"></include>
 <include src="./partials/modal-windows/buy-now.html"></include>
-<!-- <include src="./partials/modal-windows/read-more.html"></include> -->
+<!-- <include src="./partials/modal-windows/ingridients.html"></include>
+<include src="./partials/modal-windows/read-more.html"></include>
 
 
-<!-- <include src="./partials/modal-windows/our-location.html"></include> -->
-<!-- <include src="./partials/modal-windows/franchise.html"></include> -->
+<include src="./partials/modal-windows/our-location.html"></include>
+<include src="./partials/modal-windows/franchise.html"></include>  -->
 
 
 
 
-<!-- Test -->
+
 <script defer src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
   integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
   crossorigin="anonymous"></script>
@@ -78,7 +74,7 @@
 <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
 <script type="module" src="./scripts/index.js"></script>
 
-<!-------модалка------->
+
 <script src="./scripts/modal.js"></script>
 </body>
 
