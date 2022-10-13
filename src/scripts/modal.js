@@ -20,11 +20,15 @@
 (() => {
   const refs = {
     openModalBtnIngr: document.querySelector('[data-modal-open-ingr]'),
+    openModalBtnTwoIngr: document.querySelector('[data-modal-open-ingr-two]'),
+    openModalBtnThreeIngr: document.querySelector('[data-modal-open-ingr-three]'),
     closeModalBtnIngr: document.querySelector('[data-modal-close-ingr]'),
     modalIngr: document.querySelector('[data-modal-ingr]'),
   };
 
   refs.openModalBtnIngr.addEventListener('click', toggleModal);
+  refs.openModalBtnTwoIngr.addEventListener('click', toggleModal);
+  refs.openModalBtnThreeIngr.addEventListener('click', toggleModal);
   refs.closeModalBtnIngr.addEventListener('click', toggleModal);
 
   function toggleModal() {

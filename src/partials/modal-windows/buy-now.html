@@ -1,7 +1,7 @@
 <div class="backdrop is-hidden" data-modal>
   <div class="modal">
     <div class="modal-window">
-      <button class="close-button" data-modal-close>
+      <button class="close-button modal-button-close" data-modal-close>
         <svg width="20" height="20">
           <use href="./images/icons.svg#icon-close"></use>
         </svg>
@@ -11,64 +11,117 @@
       <form>
         <ul class="modal-window__list">
           <label>
-            <input type="checkbox" class="buy__hidden-button" name="buy-element" id="buy-ice-cream">
+            <input
+              type="checkbox"
+              class="buy__hidden-button"
+              name="buy-element"
+              id="buy-ice-cream"
+            />
             <li class="modal-window__item">
               <div class="modal-window__card modal-window__card--first">
-                <img class="product-img" srcset="
-                              ./images/modal-bay-now/product-mod1@1x.png 1x,
-                              ./images/modal-bay-now/product-mod1@2x.png 2x
-                            " src="./images/modal-bay-now/product-mod1@1x.png " alt="" />
-                <span class="modal-window__background modal-window__background--first"></span>
+                <img
+                  class="product-img"
+                  srcset="
+                    ./images/modal-bay-now/product-mod1@1x.png 1x,
+                    ./images/modal-bay-now/product-mod1@2x.png 2x
+                  "
+                  src="./images/modal-bay-now/product-mod1@1x.png "
+                  alt=""
+                />
+                <span
+                  class="modal-window__background modal-window__background--first"
+                ></span>
                 <p class="product-text">ice cream</p>
               </div>
             </li>
-
           </label>
 
           <label>
-            <input type="checkbox" class="buy__hidden-button" name="buy-element" id="buy-ice-coffee">
+            <input
+              type="checkbox"
+              class="buy__hidden-button"
+              name="buy-element"
+              id="buy-ice-coffee"
+            />
             <li class="modal-window__item">
               <div class="modal-window__card modal-window__card--second">
-                <img class="product-img" srcset="
-                              ./images/modal-bay-now/product-mod2@1x.png 1x,
-                              ./images/modal-bay-now/product-mod2@2x.png 2x
-                            " src="./images/modal-bay-now/product-mod2@1x.png " alt="" />
-                <span class="modal-window__background modal-window__background--second"></span>
+                <img
+                  class="product-img"
+                  srcset="
+                    ./images/modal-bay-now/product-mod2@1x.png 1x,
+                    ./images/modal-bay-now/product-mod2@2x.png 2x
+                  "
+                  src="./images/modal-bay-now/product-mod2@1x.png "
+                  alt=""
+                />
+                <span
+                  class="modal-window__background modal-window__background--second"
+                ></span>
                 <p class="product-text">ice coffee</p>
               </div>
             </li>
-
           </label>
 
           <label>
-            <input type="checkbox" class="buy__hidden-button" name="buy-element" id="buy-milkshake">
+            <input
+              type="checkbox"
+              class="buy__hidden-button"
+              name="buy-element"
+              id="buy-milkshake"
+            />
             <li class="modal-window__item">
               <div class="modal-window__card modal-window__card--third">
-                <img class="product-img" srcset="
-                              ./images/modal-bay-now/product-mod3@1x.png 1x,
-                              ./images/modal-bay-now/product-mod3@2x.png 2x
-                            " src="./images/modal-bay-now/product-mod3@1x.png " alt="" />
-                <span class="modal-window__background modal-window__background--third"></span>
+                <img
+                  class="product-img"
+                  srcset="
+                    ./images/modal-bay-now/product-mod3@1x.png 1x,
+                    ./images/modal-bay-now/product-mod3@2x.png 2x
+                  "
+                  src="./images/modal-bay-now/product-mod3@1x.png "
+                  alt=""
+                />
+                <span
+                  class="modal-window__background modal-window__background--third"
+                ></span>
                 <p class="product-text">milkshake</p>
               </div>
             </li>
-
           </label>
         </ul>
 
         <div class="form-field">
           <label class="form-label" for="name">Name</label>
-          <input required class="form-input" type="text" name="name" id="name" placeholder="Name" />
+          <input
+            required
+            class="form-input"
+            type="text"
+            name="name"
+            id="name"
+            placeholder="Name"
+          />
         </div>
         <div class="form-field">
           <label class="form-label" for="tel">Phone</label>
-          <input required class="form-input" type="tel" name="tel" id="tel" placeholder="Phone" />
+          <input
+            required
+            class="form-input"
+            type="tel"
+            name="tel"
+            id="tel"
+            placeholder="Phone"
+          />
         </div>
 
         <div class="form-field">
           <label class="form-label" for="comment">Comment</label>
-          <textarea required class="form-input area" name="comment" id="comment" rows="10"
-            placeholder="Comment"></textarea>
+          <textarea
+            required
+            class="form-input area"
+            name="comment"
+            id="comment"
+            rows="10"
+            placeholder="Comment"
+          ></textarea>
         </div>
         <button class="submit-button button buy__button" type="submit">
           Submit

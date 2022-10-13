@@ -28,27 +28,24 @@
   }
 }
 
-.close-button {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: var(--white-color);
-  position: fixed;
-  right: 12px;
-  top: 12px;
-  padding: 0;
-  margin: 0;
-  cursor: pointer;
-  transition: fill, border;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  outline: transparent;
-  border: none;
-  &:focus,
-  &:hover {
-    fill: #f8d24e;
-  }
-}
+// .close-button {
+//   display: flex;
+//   justify-content: center;
+//   align-items: center;
+//   background-color: var(--white-color);
+//   position: fixed;
+//   right: 12px;
+//   top: 12px;
+//   padding: 0;
+//   margin: 0;
+//   cursor: pointer;
+//   transition: fill, border;
+//   transition-duration: 250ms;
+//   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+//   outline: transparent;
+//   border: none;
+
+// }
 
 .modal-window {
   max-height: 95vh;

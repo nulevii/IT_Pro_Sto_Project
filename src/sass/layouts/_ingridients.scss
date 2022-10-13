@@ -1,3 +1,7 @@
+.backdrop.is-hidden-ingr {
+    visibility: hidden;
+}
+
 .modal-ingr {
      position: absolute;
     top: 50%;
@@ -190,7 +194,7 @@ justify-content: space-between;
 }
 .form-field-ing {
     @media (max-width:768px) {
-    max-width: 239px;
+    width: 239px;
     margin: 0;    
     }
 }
