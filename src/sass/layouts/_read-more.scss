@@ -14,8 +14,13 @@
 //     pointer-events: none;
 //     visibility:hidden;
 //   }
-
+.backdrop.is-hidden-read-more {
+  visibility: hidden;
+}
 .read-more {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   position: relative;
   // height: 459px;
   width: 100%;

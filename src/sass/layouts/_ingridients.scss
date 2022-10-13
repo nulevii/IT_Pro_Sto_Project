@@ -1,3 +1,25 @@
+.backdrop.is-hidden-ingr {
+    visibility: hidden;
+}
+
+.modal-ingr {
+     position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 10px;
+    border: 2px solid #F8D24E;
+    background: white;
+    padding-top: 24px;
+    padding-bottom: 32px;
+     padding-right: 20px;
+     padding-left: 20px;
+    @media screen and (min-width:768px) {
+            width: 584px;
+        
+    
+        }
+  
 .modal-window-ingridients {
   max-height: 95vh;
   overflow-y: auto;
@@ -193,10 +215,10 @@
   margin-top: 16px;
 }
 .form-field-ing {
-  @media (max-width: 768px) {
-    max-width: 239px;
-    margin: 0;
-  }
+    @media (max-width:768px) {
+    width: 239px;
+    margin: 0;    
+    }
 }
 .submit-button-ing {
   margin-bottom: 0;
