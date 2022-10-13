@@ -18,29 +18,24 @@
       </div>
 
       <ul class="list btn-list">
-        <!-- TODO: change to links -->
         <li class="btn-list__item">
-          <button class="button products__button btn-list__products" type="button">
-            Products
-          </button>
+          <a class="link products__link" href="#products">Products</a>
+
         </li>
         <li class="btn-list__item">
-          <button class="button products__button about-info-btn" aria-label="How it’s made page button">
-            How it’s made?
-          </button>
+          <a class="link products__link about-info-link" href="#about">How it’s made?</a>
         </li>
       </ul>
       <div class="hero-desc">
 
-        <div class="hero-desc__image-container">
-          <picture class="hero-desc__image">
-            <source media="(min-width: 1200px)"
-              srcset="./images/hero/img1_lg-@1x.png 1x, ./images/hero/img1_lg-@2x.png 2x" type="image/png" />
-            <source media="(min-width: 768px)"
-              srcset="./images/hero/img1_md-@1x.png 1x, ./images/hero/img1_md-@2x.png 2x" type="image/png" />
-            <img class="hero__plate-img" src="./images/hero/img1_md-@1x.png" alt="a plate with ice cream" />
-          </picture>
-        </div>
+        <picture class="hero-desc__image">
+          <source media="(min-width: 1200px)"
+            srcset="./images/hero/img1_lg-@1x.png 1x, ./images/hero/img1_lg-@2x.png 2x" type="image/png" />
+          <source media="(min-width: 768px)" srcset="./images/hero/img1_md-@1x.png 1x, ./images/hero/img1_md-@2x.png 2x"
+            type="image/png" />
+          <img class="hero__plate-img" src="./images/hero/img1_md-@1x.png" alt="a plate with ice cream" />
+        </picture>
+
 
         <div class="hero-desc__text-block">
           <p class="hero-desc__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
