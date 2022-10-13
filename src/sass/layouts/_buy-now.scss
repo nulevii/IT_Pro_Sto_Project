@@ -95,6 +95,7 @@
 }
 
 .modal-window__card {
+  display: block;
   @extend %animation-style;
   transition-property: background-color;
   position: relative;
