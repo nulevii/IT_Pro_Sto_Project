@@ -1,102 +1,87 @@
 <!-- <div class="backdrop is-hidden" data-modal> -->
-<div class="modal-ingr" data-modal-ingr>
-  <button class="close-button" data-modal-close-ingr>
-    <svg width="20" height="20">
-      <use href="./images/icons.svg#icon-close"></use>
-    </svg>
-  </button>
-  <p class="modal-window__title--br">Chololate icecream</p>
-  <div class="background-img">
-    <img
-      class="prod-img"
-      srcset="
+<div class="modal-ingr " data-modal-ingr>
+  <div class="modal-window-ingridients">
+    <button class="close-button" data-modal-close-ingr>
+      <svg width="20" height="20">
+        <use href="./images/icons.svg#icon-close"></use>
+      </svg>
+    </button>
+    <p class="modal-window__title--br">Chololate icecream</p>
+    <div class="background-img">
+      <img class="prod-img" srcset="
         ./images/modal-chololate-ice/chololate-icecream@1x.png 1x,
         ./images/modal-chololate-ice/chololate-icecream@2x.png 2x
-      "
-      src="./images/modal-chololate-ice/chololate-icecream@1x.png"
-      alt=""
-    />
-    <span class="modal-card"></span>
-  </div>
-  <div class="components">
-    <div class="component">
-      <div class="number"><p>320</p></div>
-      <span class="unit">kcal</span>
+      " src="./images/modal-chololate-ice/chololate-icecream@1x.png" alt="" />
+      <span class="modal-card"></span>
     </div>
-    <div class="component">
-      <div class="number"><p>4g</p></div>
-      <span class="unit">Prote...</span>
-    </div>
-    <div class="component">
-      <div class="number"><p>8,2g</p></div>
-      <span class="unit">Fats</span>
-    </div>
-    <div class="component">
-      <div class="number"><p>40,4g</p></div>
-      <span class="unit">Carbs</span>
-    </div>
-  </div>
-
-  <p class="modal__title">Ingredients</p>
-  <ul class="ingr-list">
-    <li class="ingr-item">
-      <span class="ingradient">Milk</span><span>100ml</span>
-    </li>
-    <li class="ingr-item">
-      <span class="ingradient">Belgian chocolate</span><span>20g</span>
-    </li>
-    <li class="ingr-item">
-      <span class="ingradient">Cream</span><span>150 ml</span>
-    </li>
-    <li class="ingr-item">
-      <span class="ingradient">Cocoa powder</span><span> 30g</span>
-    </li>
-    <li class="ingr-item">
-      <span class="ingradient">Sugar</span><span>40g</span>
-    </li>
-    <li class="ingr-item">
-      <span class="ingradient">Vanilla sugar</span><span>10g</span>
-    </li>
-  </ul>
-  <form>
-    <div class="form-field">
-      <label class="form-label" for="name">Name</label>
-      <input
-        class="form-input form-field-ing"
-        type="text"
-        name="name"
-        id="name"
-        placeholder="Name"
-      />
-    </div>
-    <div class="form-field-ingr">
-      <label class="form-label" for="tel">Phone</label>
-      <input
-        class="form-input form-field-ing"
-        type="tel"
-        name="tel"
-        id="tel"
-        placeholder="Phone"
-      />
+    <div class="components">
+      <div class="component">
+        <div class="number">
+          <p>320</p>
+        </div>
+        <span class="unit">kcal</span>
+      </div>
+      <div class="component">
+        <div class="number">
+          <p>4g</p>
+        </div>
+        <span class="unit">Prote...</span>
+      </div>
+      <div class="component">
+        <div class="number">
+          <p>8,2g</p>
+        </div>
+        <span class="unit">Fats</span>
+      </div>
+      <div class="component">
+        <div class="number">
+          <p>40,4g</p>
+        </div>
+        <span class="unit">Carbs</span>
+      </div>
     </div>
 
-    <div class="form-field">
-      <label class="form-label" for="comment">Comment</label>
-      <textarea
-        class="form-input area form-field-ing"
-        name="comment"
-        id="comment"
-        rows="10"
-        placeholder="Comment"
-      ></textarea>
-    </div>
-    <button
-      class="submit-button submit-button-ing button buy__button"
-      type="submit"
-    >
-      Submit
-    </button>
-  </form>
+    <p class="modal__title">Ingredients</p>
+    <ul class="ingr-list">
+      <li class="ingr-item">
+        <span class="ingradient">Milk</span><span>100ml</span>
+      </li>
+      <li class="ingr-item">
+        <span class="ingradient">Belgian chocolate</span><span>20g</span>
+      </li>
+      <li class="ingr-item">
+        <span class="ingradient">Cream</span><span>150 ml</span>
+      </li>
+      <li class="ingr-item">
+        <span class="ingradient">Cocoa powder</span><span> 30g</span>
+      </li>
+      <li class="ingr-item">
+        <span class="ingradient">Sugar</span><span>40g</span>
+      </li>
+      <li class="ingr-item">
+        <span class="ingradient">Vanilla sugar</span><span>10g</span>
+      </li>
+    </ul>
+    <form>
+      <div class="form-field">
+        <label class="form-label" for="name">Name</label>
+        <input class="form-input form-field-ing" type="text" name="name" id="name" placeholder="Name" />
+      </div>
+      <div class="form-field-ingr">
+        <label class="form-label" for="tel">Phone</label>
+        <input class="form-input form-field-ing" type="tel" name="tel" id="tel" placeholder="Phone" />
+      </div>
+
+      <div class="form-field">
+        <label class="form-label" for="comment">Comment</label>
+        <textarea class="form-input area form-field-ing" name="comment" id="comment" rows="10"
+          placeholder="Comment"></textarea>
+      </div>
+      <button class="submit-button submit-button-ing button buy__button" type="submit">
+        Submit
+      </button>
+    </form>
+  </div>
 </div>
 
 <!-- </div> -->
