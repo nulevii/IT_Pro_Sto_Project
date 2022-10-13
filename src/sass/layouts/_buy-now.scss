@@ -283,18 +283,18 @@
   visibility: hidden;
   width: 0;
   height: 0;
+}
 
-  &:checked + .modal-window__card {
-    &--first {
-      background-color: #96af8c;
-    }
+.background.modal-window__card {
+  &--first {
+    background-color: #96af8c;
+  }
 
-    &--second {
-      background-color: #efd478;
-    }
+  &--second {
+    background-color: #efd478;
+  }
 
-    &--third {
-      background-color: #d6936d;
-    }
+  &--third {
+    background-color: #d6936d;
   }
 }

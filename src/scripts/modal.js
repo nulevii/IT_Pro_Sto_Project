@@ -5,11 +5,25 @@
     openModalBtnTwoBuy: document.querySelector('[data-modal-open-two]'),
     closeModalBtnBuy: document.querySelector('[data-modal-close]'),
     modalBuy: document.querySelector('[data-modal]'),
+
+    buyElementOne: document.querySelector('.modal-window__card--first'),
+    buyElementTwo: document.querySelector('.modal-window__card--second'),
+    buyElementThree: document.querySelector('.modal-window__card--third'),
   };
 
   refs.openModalBtnBuy.addEventListener('click', toggleModal);
   refs.openModalBtnTwoBuy.addEventListener('click', toggleModal);
   refs.closeModalBtnBuy.addEventListener('click', toggleModal);
+
+  refs.buyElementOne.addEventListener('click', () => {
+    refs.buyElementOne.classList.toggle('background');
+  });
+  refs.buyElementTwo.addEventListener('click', () => {
+    refs.buyElementTwo.classList.toggle('background');
+  });
+  refs.buyElementThree.addEventListener('click', () => {
+    refs.buyElementThree.classList.toggle('background');
+  });
 
   function toggleModal() {
     refs.modalBuy.classList.toggle('is-hidden');
