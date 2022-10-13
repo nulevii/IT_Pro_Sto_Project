@@ -15,7 +15,10 @@
   //   visibility:hidden;   
   // }
 .backdrop.is-hidden-franchise {
+  opacity: 0;
+  pointer-events: none;
   visibility: hidden;
+
 }
 .franchise { 
   top: 50%;
