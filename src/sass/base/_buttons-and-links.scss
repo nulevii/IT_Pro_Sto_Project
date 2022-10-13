@@ -56,14 +56,12 @@
   &.products__button {
     padding: 0;
     @extend %button-style-secondary;
-    width: 62px;
-    height: 24px;
-    font-size: 8px;
 
+    padding: 4px 11px;
+    font-size: 8px;
     border-radius: 8px;
+
     @media screen and (min-width: 1200px) {
-      width: auto;
-      height: auto;
       padding: 12px 34px;
       font-weight: 600;
       font-size: 14px;
@@ -141,17 +139,17 @@
 
   padding: 0;
   height: 15px;
-  
+
   color: var(--color-black-main);
   background-color: transparent;
   border: none;
-  
+
   &:hover {
     // transform-origin: center left;
     transform: scaleX(1.2);
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-    
+
     cursor: pointer;
   }
 
@@ -160,7 +158,7 @@
     transform: scale(1.5);
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-    
+
     cursor: pointer;
   }
 }

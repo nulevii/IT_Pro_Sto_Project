@@ -2,11 +2,15 @@
   &__container {
     display: flex;
     justify-content: space-between;
+    // position: relative;
+    // z-index: 999;
 
     .hero-franchise {
       display: none;
 
       @media screen and (min-width: 768px) {
+        position: relative;
+        z-index: 998;
         display: block;
         text-align: right;
       }
@@ -124,7 +128,7 @@
   }
 }
 
-.button-arrow-default--white {
+.arrow-two.hero__arrow-two {
   fill: var(--color-white-main);
   color: var(--color-white-main);
   display: block;

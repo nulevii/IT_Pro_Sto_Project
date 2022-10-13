@@ -3,13 +3,15 @@
   top: 0;
   left: 0;
   position: fixed;
+  z-index: 999;
   width: 100vw;
   transform: translateX(100%);
   display: block;
-  margin-left: auto;
-  margin-right: auto;
-  padding-left: 20px;
-  padding-right: 20px;
+  height: 100vh;
+  // margin-left: auto;
+  // margin-right: auto;
+  // padding-left: 20px;
+  // padding-right: 20px;
 
   background-color: var(--color-green-main);
 
@@ -34,6 +36,8 @@
     width: 100%;
     justify-content: space-between;
     margin-bottom: 51px;
+    padding-left: 20px;
+    padding-right: 20px;
 
     @media screen and (min-width: 768px) {
       margin-bottom: 76px;
