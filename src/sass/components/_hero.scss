@@ -184,6 +184,9 @@
 }
 
 .arrow-two.hero__arrow-two {
+  transition: transform;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   fill: var(--color-white-main);
   color: var(--color-white-main);
   display: block;
