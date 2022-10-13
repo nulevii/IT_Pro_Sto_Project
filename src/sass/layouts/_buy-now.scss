@@ -44,6 +44,10 @@
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   outline: transparent;
   border: none;
+  &:focus,
+  &:hover {
+    fill: #f8d24e;
+  }
 }
 
 .modal-window {
@@ -94,7 +98,6 @@
 }
 
 .modal-window__card {
-  display: block;
   @extend %animation-style;
   transition-property: background-color;
   position: relative;
