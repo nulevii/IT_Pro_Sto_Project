@@ -128,6 +128,11 @@
   }
 }
 
+// .arrow-two {
+// display: flex;
+// align-items: center;
+// justify-content: center;
+
 .arrow-two.hero__arrow-two {
   fill: var(--color-white-main);
   color: var(--color-white-main);
@@ -137,6 +142,10 @@
   @media screen and (min-width: 1200px) {
     // margin-top: 30px;
   }
+
+  // &__svg {
+  //   margin-left: 12px;
+  // }
 }
 
 .btn-list {
