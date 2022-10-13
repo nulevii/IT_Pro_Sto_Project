@@ -17,10 +17,6 @@
     }
 }
 
-.about__container {
-  padding: 0;
-}
-
 .about__uppertitle {
   color: var(--color-white-main);
 }
@@ -74,6 +70,7 @@
   position: absolute;
     width: 278px;
     height: 278px;
+    
   
     border-radius: 50%;
   
@@ -183,7 +180,7 @@
 
 }
 .about__image {
-  
+
   width: 278px;
   height: 278px;
   max-width: 278px;
