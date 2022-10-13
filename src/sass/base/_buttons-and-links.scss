@@ -86,7 +86,8 @@
 
   &.franchise__button {
     width: 196px;
-
+    // в падинге не был учтен размер бордера на кнопке.
+    padding: 10px 32px;
     @extend %button-style-secondary;
 
     .arrow-one {
@@ -144,20 +145,19 @@
   background-color: transparent;
   border: none;
 
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
   &:hover {
-    // transform-origin: center left;
+    transform-origin: center left;
     transform: scaleX(1.2);
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
     cursor: pointer;
   }
 
   &:focus {
-    // transform-origin: center left;
+    transform-origin: center left;
     transform: scale(1.5);
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
     cursor: pointer;
   }

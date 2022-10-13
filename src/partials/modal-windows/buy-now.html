@@ -11,7 +11,7 @@
       <form>
         <ul class="modal-window__list">
           <label>
-            <input type="checkbox" class="hidden-button" name="buy-element" id="buy-ice-cream">
+            <input type="checkbox" class="buy__hidden-button" name="buy-element" id="buy-ice-cream">
             <li class="modal-window__item">
               <div class="modal-window__card modal-window__card--first">
                 <img class="product-img" srcset="
@@ -26,7 +26,7 @@
           </label>
 
           <label>
-            <input type="checkbox" class="hidden-button" name="buy-element" id="buy-ice-coffee">
+            <input type="checkbox" class="buy__hidden-button" name="buy-element" id="buy-ice-coffee">
             <li class="modal-window__item">
               <div class="modal-window__card modal-window__card--second">
                 <img class="product-img" srcset="
@@ -41,7 +41,7 @@
           </label>
 
           <label>
-            <input type="checkbox" class="hidden-button" name="buy-element" id="buy-milkshake">
+            <input type="checkbox" class="buy__hidden-button" name="buy-element" id="buy-milkshake">
             <li class="modal-window__item">
               <div class="modal-window__card modal-window__card--third">
                 <img class="product-img" srcset="
@@ -58,16 +58,17 @@
 
         <div class="form-field">
           <label class="form-label" for="name">Name</label>
-          <input class="form-input" type="text" name="name" id="name" placeholder="Name" />
+          <input required class="form-input" type="text" name="name" id="name" placeholder="Name" />
         </div>
         <div class="form-field">
           <label class="form-label" for="tel">Phone</label>
-          <input class="form-input" type="tel" name="tel" id="tel" placeholder="Phone" />
+          <input required class="form-input" type="tel" name="tel" id="tel" placeholder="Phone" />
         </div>
 
         <div class="form-field">
           <label class="form-label" for="comment">Comment</label>
-          <textarea class="form-input area" name="comment" id="comment" rows="10" placeholder="Comment"></textarea>
+          <textarea required class="form-input area" name="comment" id="comment" rows="10"
+            placeholder="Comment"></textarea>
         </div>
         <button class="submit-button button buy__button" type="submit">
           Submit
