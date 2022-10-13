@@ -96,10 +96,6 @@
 
   &.buy__button {
     @extend %button-style-main;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 12px;
   }
 }
 

@@ -1,7 +1,18 @@
 .hero {
+  padding-top: 61px;
+
+  @media screen and (min-width: 768px) {
+    padding-top: 40px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    padding-top: 45px;
+  }
+
   &__container {
     display: flex;
     justify-content: space-between;
+
     // position: relative;
     // z-index: 999;
 
@@ -50,7 +61,7 @@
     font-size: 26px;
     line-height: 1.27;
     width: 247px;
-    margin-bottom: 32px;
+    padding-bottom: 32px;
     color: var(--color-white-main);
 
     @media screen and (min-width: 768px) {
@@ -58,7 +69,7 @@
       line-height: 1.28;
       width: 181px;
       letter-spacing: 0;
-      margin-bottom: 21px;
+      padding-bottom: 21px;
     }
 
     @media screen and (min-width: 1200px) {
@@ -66,7 +77,7 @@
       font-size: 38px;
       line-height: 1.26;
       letter-spacing: 0.04em;
-      margin-bottom: 28px;
+      padding-bottom: 28px;
     }
 
     &--big {

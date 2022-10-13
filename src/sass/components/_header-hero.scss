@@ -1,27 +1,24 @@
-// .header-hero {
-// }
-
 .container--background-dots {
   position: relative;
   background-image: url(../images/dots-mobile.svg);
   background-repeat: no-repeat;
   background-size: contain;
   background-position: bottom;
-  height: 502px;
+  height: 453px;
 
   @media screen and (min-width: 768px) {
     background-image: url(../images/dots-tablet.svg);
-    height: 415px;
+    height: 351px;
   }
 
   @media screen and (min-width: 1200px) {
     background-image: url(../images/dots-desktop.svg);
-    height: 664px;
+    height: 591px;
   }
 }
 
 .hero {
-  margin-bottom: 32px;
+  // margin-bottom: 32px;
 }
 
 .hero__main-img {
@@ -34,16 +31,16 @@
 
   @media screen and (min-width: 320px) {
     left: 14%;
-    bottom: -10.5%;
+    bottom: -12%;
   }
 
   @media screen and (min-width: 768px) {
     left: 46%;
-    bottom: -14%;
+    bottom: -16%;
   }
 
   @media screen and (min-width: 1200px) {
     left: 45%;
-    bottom: -15%;
+    bottom: -17%;
   }
 }

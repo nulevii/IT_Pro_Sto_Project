@@ -1,18 +1,24 @@
+.page-header {
+  min-width: 320px;
+  background-color: var(--color-green-main);
+  // position: fixed;
+}
+
 .nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding-top: 12px;
-  padding-bottom: 61px;
+  // padding-bottom: 61px;
 
   @media screen and (min-width: 768px) {
     padding-top: 20px;
-    padding-bottom: 40px;
+    // padding-bottom: 40px;
   }
 
   @media screen and (min-width: 1200px) {
     padding-top: 18px;
-    padding-bottom: 45px;
+    // padding-bottom: 45px;
   }
 
   &__logo {
@@ -65,7 +71,7 @@
   }
 }
 
-.buy__button {
+.buy__button--visible {
   display: none;
 
   @media screen and (min-width: 768px) {
@@ -78,4 +84,8 @@
       display: none;
     }
   }
+}
+
+.buy__button-arrow {
+  margin-left: 12px;
 }
