@@ -13,9 +13,8 @@
   background-color: var(--color-green-main);
 
   transition: transform, visibility;
-  transition-duration: var(--default-animation-duration);
-  transition-duration: var(--default-animation-npmduration);
-  transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+  transition-duration: 350ms;
+  transition-timing-function: ease-in-out;
 
   @media screen and (min-width: 768px) {
     display: block;
@@ -59,7 +58,9 @@
   font-size: 32px;
   line-height: 1.22;
   margin-bottom: 51px;
-  transition: color var(--default-animation-duration) var(--default-animation);
+  transition-property: color;
+  @extend %animation-style;
+
   @media screen and (min-width: 768px) {
     margin-bottom: 75px;
   }
@@ -73,4 +74,14 @@
 .nav__item-link-mobile {
   text-decoration: none;
   color: var(--color-white-main);
+}
+
+.mobile-menu__button {
+  @extend %animation-style;
+  transition-property: color, stroke;
+  stroke: var(--color-white-main);
+}
+.mobile-menu__button:hover {
+  fill: var(--color-yellow-main);
+  stroke: var(--color-yellow-main);
 }
