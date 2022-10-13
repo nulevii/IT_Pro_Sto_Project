@@ -11,17 +11,20 @@
   border: 3px solid #f8d24e;
   border-radius: 10px;
 
+  padding-top: 5px;
+  padding-bottom: 5px;
+
   ::-webkit-scrollbar {
     width: 5px;
   }
 
   ::-webkit-scrollbar-thumb {
-    background-color: #fcecb4 !important;
-    border-radius: 2rem !important;
+    background-color: #fcecb4;
+    border-radius: 10px;
   }
 
   ::-webkit-scrollbar-corner {
-    background: #fcecb4 !important;
+    background: #fcecb4;
   }
 
   @media screen and (min-width: 768px) {

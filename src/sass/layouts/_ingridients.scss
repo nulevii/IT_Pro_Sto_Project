@@ -1,7 +1,7 @@
 .backdrop.is-hidden-ingr {
-    opacity: 0;
-    pointer-events: none;
-    visibility: hidden;
+  opacity: 0;
+  pointer-events: none;
+  visibility: hidden;
 }
 
 .modal-ingr {
@@ -12,7 +12,22 @@
   border-radius: 10px;
   border: 2px solid #f8d24e;
   background: white;
-  
+  padding-top: 5px;
+  padding-bottom: 5px;
+
+  ::-webkit-scrollbar {
+    width: 5px;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background-color: #fcecb4;
+    border-radius: 10px;
+  }
+
+  ::-webkit-scrollbar-corner {
+    background: #fcecb4;
+  }
+
   @media screen and (min-width: 768px) {
     width: 584px;
   }
@@ -24,9 +39,9 @@
     scrollbar-width: thin;
     scrollbar-color: var(--color-yellow-main) transparent;
     padding-top: 24px;
-      padding-bottom: 32px;
-      padding-right: 20px;
-      padding-left: 20px;
+    padding-bottom: 32px;
+    padding-right: 20px;
+    padding-left: 20px;
   }
 
   .modal-ingr {
@@ -40,18 +55,6 @@
 
     @media screen and (min-width: 768px) {
       width: 584px;
-    }
-    ::-webkit-scrollbar {
-      width: 5px;
-    }
-
-    ::-webkit-scrollbar-thumb {
-      background-color: #f8d24e !important;
-      border-radius: 2rem !important;
-    }
-
-    ::-webkit-scrollbar-corner {
-      background: #f8d24e !important;
     }
   }
 
