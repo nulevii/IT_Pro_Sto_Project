@@ -18,5 +18,3 @@ new Swiper('.clients__slider', {
     clickable: true,
   },
 });
-
-AOS.init();
