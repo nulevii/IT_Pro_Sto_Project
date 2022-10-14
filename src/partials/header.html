@@ -17,7 +17,7 @@
       <li class="nav__item">
         <a href="#about" class="nav__item-link link" data-nav-link>How it’s made?
           <svg class="nav__icon">
-            <use href="./images/icons.svg#icon-cursor"></use>
+            <use class="nav__icon-link" href="./images/icons.svg#icon-cursor"></use>
           </svg>
         </a>
       </li>
@@ -57,7 +57,9 @@
   <nav class="nav mobile-menu js-menu-container">
 
     <div class="mobile-menu__header">
-      <img class="logo nav__logo" src="./images/header-hero/logo.png" alt="logo" />
+
+      <a href="" data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine" data-aos-duration="600"><img
+          class="logo nav__logo" src="./images/header-hero/logo.png" alt="logo"></a>
       <button type="button" class="mobile-menu__button js-close-menu">
         <svg class="mobile-menu--close" width="32" height="32" aria-label="mobile menu close-button">
           <use href="./images/icons.svg#icon-burger-close"></use>

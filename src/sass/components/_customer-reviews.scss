@@ -102,7 +102,7 @@
   width: 12px;
   height: 12px;
   border-radius: 50%;
-  color: var(--color-gray-radio);
+  color: var(--color-gray-buttons);
   @extend %animation-style;
   transition-property: background-color;
   &:hover {
@@ -129,7 +129,7 @@
 //   width: 12px;
 //   height: 12px;
 //   border-radius: 50%;
-//   background-color: var(--color-gray-radio);
+//   background-color: var(--color-gray-buttons);
 
 //   &:hover {
 //     cursor: pointer;

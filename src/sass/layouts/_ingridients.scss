@@ -10,7 +10,7 @@
   left: 50%;
   transform: translate(-50%, -50%);
   border-radius: 10px;
-  border: 2px solid #f8d24e;
+  border: 2px solid var(--color-yellow-main);
   background: white;
   padding-top: 5px;
   padding-bottom: 5px;
@@ -50,7 +50,7 @@
     left: 50%;
     transform: translate(-50%, -50%);
     border-radius: 10px;
-    border: 3px solid #f8d24e;
+    border: 3px solid var(--color-yellow-main);
     background: white;
 
     @media screen and (min-width: 768px) {
@@ -59,7 +59,7 @@
   }
 
   .modal-window__title--br {
-    @media (max-width: 767px) {
+    @media (max-width: 768px) {
       max-width: 142px;
     }
 
@@ -215,9 +215,8 @@
     margin-top: 16px;
   }
   .form-field-ing {
-    @media (max-width: 768px) {
+    @media (max-width: 767px) {
       width: 239px;
-      margin: 0;
     }
   }
   .submit-button-ing {
