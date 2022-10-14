@@ -41,6 +41,7 @@
   top: 12px;
   padding: 0;
   margin: 0;
+
   cursor: pointer;
   transition: fill, border;
   transition-duration: 250ms;
@@ -50,6 +51,10 @@
   &:focus,
   &:hover {
     fill: #f8d24e;
+  }
+
+  @media screen and (min-width: 320px) {
+    margin-right: 0;
   }
 }
 
@@ -84,7 +89,7 @@
 }
 
 .modal-window__list {
-  @media screen and(min-width:320px) and(max-width:767px) {
+  @media screen and(max-width:767px) {
     min-width: 280px;
     align-items: center;
 
@@ -228,6 +233,7 @@
 }
 
 .form-input {
+  max-width: 90vw;
   margin-left: auto;
   margin-right: auto;
 
@@ -253,6 +259,7 @@
 }
 
 .form-input.area {
+  max-width: 90vw;
   @media screen and(max-width:767px) {
     height: 64px;
   }
