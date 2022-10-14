@@ -1,8 +1,7 @@
-
 .backdrop.is-hidden-read-more {
-    opacity: 0;
-    pointer-events: none;
-    visibility: hidden;
+  opacity: 0;
+  pointer-events: none;
+  visibility: hidden;
 }
 .read-more {
   top: 50%;
@@ -14,7 +13,7 @@
   max-width: 450px;
   padding: 26px;
   border-radius: 10px;
-  border: 2px solid #f8d24e;
+  border: 2px solid var(--color-yellow-main);
   margin-bottom: 20px;
   background-color: var(--color-white-main);
   @media screen and (min-width: 768px) {

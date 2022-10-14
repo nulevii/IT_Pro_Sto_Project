@@ -13,7 +13,7 @@
   max-width: 450px;
   padding: 26px;
   border-radius: 10px;
-  border: 2px solid #f8d24e;
+  border: 2px solid var(--color-yellow-main);
   background-color: var(--color-white-main);
   @media screen and (min-width: 768px) {
     width: 568px;
