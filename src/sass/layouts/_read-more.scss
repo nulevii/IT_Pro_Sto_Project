@@ -11,12 +11,17 @@
   position: relative;
   // height: 459px;
   width: 100%;
-  max-width: 450px;
+  // max-width: 450px;
   padding: 26px;
   border-radius: 10px;
   border: 2px solid #f8d24e;
   margin-bottom: 20px;
   background-color: var(--color-white-main);
+  @media screen and (min-width: 319px) {
+      
+      max-width: 300px;
+
+    }
   @media screen and (min-width: 768px) {
     width: 568px;
     max-width: 568px;
@@ -42,7 +47,8 @@
 .read-more_youtube {
   position: relative;
   height: 199px;
-  max-width: 394px;
+  width: 100%;
+
   background-color: var(--color-black-main);
   margin-bottom: 20px;
   @media screen and (min-width: 768px) {
