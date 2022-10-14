@@ -8,19 +8,23 @@
   left: 50%;
   transform: translate(-50%, -50%);
   position: relative;
-  height: 365px;
-  width: 100%;
-  max-width: 450px;
+  // height: 365px;
+  // width: 100%;
+  // max-width: 450px;
   padding: 26px;
   border-radius: 10px;
   border: 2px solid var(--color-yellow-main);
   background-color: var(--color-white-main);
+  @media screen and (min-width: 319px) {
+  max-width: 300px;
+    }
   @media screen and (min-width: 768px) {
     width: 568px;
     max-width: 568px;
-    height: 458px;
+    // height: 458px;
     padding: 30px 58px;
   }
+ 
 }
 
 .location__subtitle {
