@@ -56,12 +56,12 @@
 .nav__icon {
   position: absolute;
   fill: transparent;
-  // stroke: black;
   width: 20px;
   height: 25px;
   left: 98%;
   top: 52%;
 }
+
 .nav__item-link:hover,
 .nav__item-link:focus .nav__icon {
   stroke: black;

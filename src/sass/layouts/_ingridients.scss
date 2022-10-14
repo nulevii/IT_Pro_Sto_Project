@@ -59,7 +59,7 @@
   }
 
   .modal-window__title--br {
-    @media (max-width: 767px) {
+    @media (max-width: 768px) {
       max-width: 142px;
     }
 
@@ -215,9 +215,8 @@
     margin-top: 16px;
   }
   .form-field-ing {
-    @media (max-width: 768px) {
+    @media (max-width: 767px) {
       width: 239px;
-      margin: 0;
     }
   }
   .submit-button-ing {
