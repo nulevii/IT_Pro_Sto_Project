@@ -52,12 +52,16 @@
         letter-spacing: 0.04em;
         text-transform: uppercase;
         color: var(--color-black-main);
+        //
+        padding-bottom: 4px; 
+        // 
 
         @media screen and (min-width: 1200px) {
           font-size: 46px;
           line-height: 56px;
         }
       }
+      
     }
   }
 
@@ -101,7 +105,9 @@
     }
   }
 }
-
+.hero-franchise__item:not(:last-child) p {
+margin-bottom: 16px;
+}
 .container--background-dots {
   position: relative;
   background-image: url(../images/dots-mobile.svg);
